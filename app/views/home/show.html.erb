@@ -1,0 +1,10 @@
+<div class="flex flex-col text-center pt-16">
+   <% if user_signed_in? %>
+    <h1 class="text-3xl p-2">CMS</h1>
+    <p>You're logged in...and here will go some stuff...</p>
+   <% else %>
+    <h1 class="text-3xl p-2">CMS</h1>
+    <!-- Place a login button anywhere on your application -->
+    <%= button_to 'Login', 'auth/auth0', method: :post, class: "p-2 text-white rounded bg-gold" %>
+  <% end %>
+</div>

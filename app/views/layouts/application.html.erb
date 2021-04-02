@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cadet</title>
+    <title>Cadet In Training</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,7 +11,31 @@
   <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 
-  <body>
-    <%= yield %>
+ <body class="flex flex-col min-h-screen">
+    <header class="p-2 flex flex-col md:flex-row justify-between items-center bg-black text-white">
+      <div>
+        <% if user_signed_in? %>
+          <a href="/funds" class="p-4 text-white no-underline text-base">Content</a>
+          <a href="/dashboard" class="p-4 text-white no-underline text-base">Dashboard</a>
+        <% end %>
+      </div>
+      <div class="flex flex-row items-center">
+        <% if user_signed_in? %>
+          <a href="/dashboard">
+            <%= image_tag(session[:user]['info']['image'], alt: 'Profile Pic', class: "mr-2 h-12 rounded-full")%>
+          </a>
+          <%= button_to 'Log Out', '/auth/logout', method: :get, class: "p-2 text-white rounded bg-gold" %>
+        <% else %>
+          <%= button_to 'Login', '/auth/auth0', method: :post, class: "p-2 text-white rounded bg-gold" %>
+        <% end %>
+      </div>
+    </header>
+    <div class="flex-grow">
+      <%= render partial: "shared/flash"%>
+      <%= yield %>
+    </div>
+    <footer class="p-4 bg-black">
+      2021
+    </footer>
   </body>
 </html>
