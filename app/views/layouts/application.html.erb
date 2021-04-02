@@ -22,7 +22,7 @@
       <div class="flex flex-row items-center">
         <% if user_signed_in? %>
           <a href="/dashboard">
-            <%= image_tag(session[:user]['info']['image'], alt: 'Profile Pic', class: "mr-2 h-12 rounded-full")%>
+            <%= image_tag("https://sesamestreetincommunities.org/wp-content/uploads/ss-avatars/elmo.png", alt: 'Profile Pic', class: "mr-2 h-12 rounded-full")%>
           </a>
           <%= button_to 'Log Out', '/auth/logout', method: :get, class: "p-2 text-white rounded bg-gold" %>
         <% else %>

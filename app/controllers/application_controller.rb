@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
-  def current_user
-    @current_user ||= session[:user]
+  # def current_user
+  #   @current_user ||= session[:user]
     
-    # In the future, the user will exist in the db and be linked via email.
-    # @current_user ||= User.find_by(email: session[:user]['info']['email'])
-  end
-  helper_method :current_user
+  #   # In the future, the user will exist in the db and be linked via email.
+  #   # @current_user ||= User.find_by(email: session[:user]['info']['email'])
+  # end
+  # helper_method :current_user
 
   def user_signed_in?
     session[:user].present? ? true : false
