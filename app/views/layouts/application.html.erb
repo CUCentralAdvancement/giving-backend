@@ -15,7 +15,7 @@
     <header class="p-2 flex flex-col md:flex-row justify-between items-center bg-black text-white">
       <div>
         <% if user_signed_in? %>
-          <a href="/funds" class="p-4 text-white no-underline text-base">Content</a>
+          <a href="/funds" class="p-4 text-white no-underline text-base">Funds</a>
           <a href="/dashboard" class="p-4 text-white no-underline text-base">Dashboard</a>
         <% end %>
       </div>
@@ -31,7 +31,7 @@
         <% end %>
       </div>
     </header>
-    <div class="flex-grow">
+    <div class="flex-grow p-4">
       <%= render partial: "shared/flash"%>
       <%= yield %>
     </div>

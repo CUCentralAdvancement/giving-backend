@@ -1,0 +1,58 @@
+<%= form_with(model: fund) do |form| %>
+  <% if fund.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fund.errors.count, "error") %> prohibited this fund from being saved:</h2>
+
+      <ul>
+        <% fund.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allocation_code %>
+    <%= form.text_field :allocation_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marketing_content %>
+    <%= form.rich_text_area :marketing_content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :campus %>
+    <%= form.text_field :campus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :keywords %>
+    <%= form.text_field :keywords %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interest %>
+    <%= form.text_field :interest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suggested_amount %>
+    <%= form.number_field :suggested_amount %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

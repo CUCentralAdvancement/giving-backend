@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+  .pagy-nav {
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+ }
+ .pagy-nav .page {
+   cursor: pointer;
+   padding: 1.25rem;
+   border: 1px solid #ccc;
+ }
+
+ .pagy-nav .page:hover {
+   background-color: #eee;
+ }
