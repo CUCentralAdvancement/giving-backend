@@ -16,6 +16,11 @@
     <%= form.text_field :title %>
   </div>
 
+  <% if form.object.persisted? %>
+    <%= form.label :slug %>
+    <%= form.text_field :slug, class: "w-full" %>
+  <% end %>
+
   <div class="field">
     <%= form.label :description %>
     <%= form.text_field :description %>
