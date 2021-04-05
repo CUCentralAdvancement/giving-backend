@@ -24,9 +24,10 @@
           <a href="/dashboard">
             <%= image_tag("https://sesamestreetincommunities.org/wp-content/uploads/ss-avatars/elmo.png", alt: 'Profile Pic', class: "mr-2 h-12 rounded-full")%>
           </a>
-          <%= button_to 'Log Out', '/auth/logout', method: :get, class: "p-2 text-white rounded bg-gold" %>
+          <%= button_to 'Log Out', '/auth/logout', method: :get, class: "p-2 text-white rounded bg-gold", data: { testid: 'logout-button' } %>
         <% else %>
-          <%= button_to 'Login', '/auth/auth0', method: :post, class: "p-2 text-white rounded bg-gold" %>
+          <%# <%= button_to 'Login', '/auth/auth0', method: :post, class: "p-2 text-white rounded bg-gold" %>
+          <span style="height: 30px;"></span>
         <% end %>
       </div>
     </header>
