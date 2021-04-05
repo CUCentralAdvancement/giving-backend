@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @fund.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @fund.description %>
+</p>
+
+<p>
+  <strong>Allocation code:</strong>
+  <%= @fund.allocation_code %>
+</p>
+
+<p>
+  <strong>Campus:</strong>
+  <%= @fund.campus %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @fund.keywords %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @fund.interest %>
+</p>
+
+<p>
+  <strong>Suggested amount:</strong>
+  <%= @fund.suggested_amount %>
+</p>
+
+<p>
+  <strong>Marketing content:</strong>
+  <%= @fund.marketing_content %>
+</p>
+
+<%= link_to 'Edit', edit_fund_path(@fund) %> |
+<%= link_to 'Back', funds_path %>

@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'csv'
+CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
+  Fund.create({
+    title: row['title'],
+    description: row['description'],
+    allocation_code: row['allocation_code'],
+    campus: row['campus'],
+    keywords: row['keywords'],
+    interest: row['interest'],
+    suggested_amount: row['suggested_amount'],
+    marketing_content: row['marketing_content'],
+  })
+  puts row['title']
+end
