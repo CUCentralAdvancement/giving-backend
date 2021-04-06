@@ -4,6 +4,14 @@
     "cloudinary:starter",
     "algoliasearch:free"
   ],
+  "environments": {
+    "review": {
+      "addons": [
+        "heroku-postgresql:hobby-dev",
+        "cloudinary:starter"
+      ]
+    }
+  },
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-ruby"
