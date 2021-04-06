@@ -1,7 +1,7 @@
-put "Application ID"
-put ENV['ALGOLIASEARCH_APPLICATION_ID']
-put "API Key"
-put ENV['ALGOLIASEARCH_API_KEY']
+puts "Application ID"
+puts ENV['ALGOLIASEARCH_APPLICATION_ID']
+puts "API Key"
+puts ENV['ALGOLIASEARCH_API_KEY']
 
 AlgoliaSearch.configuration = {
   application_id: ENV['ALGOLIASEARCH_APPLICATION_ID'],
