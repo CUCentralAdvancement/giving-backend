@@ -60,3 +60,5 @@ gem "omniauth-rails_csrf_protection", "~> 0.1.2"
 gem "pagy", "~> 3.12"
 
 gem "friendly_id", "~> 5.4"
+
+gem "algoliasearch-rails", "~> 1.25"
