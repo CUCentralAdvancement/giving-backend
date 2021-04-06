@@ -6,6 +6,11 @@ class Fund < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: [:slugged, :history]
 
+  include AlgoliaSearch
+  algoliasearch do
+    # Use all default configuration
+  end
+
   class ReusableSlugGenerator < FriendlyId::SlugGenerator
     def available?(slug)
       if @config.uses?(::FriendlyId::Reserved) && @config.reserved_words.present? && @config.treat_reserved_as_conflict
