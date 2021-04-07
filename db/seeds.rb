@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Page.create({
+  title: "First Page",
+});
+
 require 'csv'
 CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
   Fund.create({

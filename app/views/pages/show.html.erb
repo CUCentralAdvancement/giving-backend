@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @page.title %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @page.slug %>
+</p>
+
+<%= image_tag @page.main_image, width: 300, class: "shadow border" %>
+
+<div class="py-3">
+  <%= @page.content %>
+</div>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

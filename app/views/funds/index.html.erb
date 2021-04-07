@@ -20,7 +20,7 @@
   <tbody>
     <% @funds.each do |fund| %>
       <tr>
-        <td class="p-2 border"><%= link_to fund.title, fund %></td>
+        <td class="p-2 border"><%= link_to fund.title, fund, class: "text-blue-600 underline" %></td>
         <td class="p-2 border"><%= fund.description %></td>
         <td class="p-2 border"><%= fund.allocation_code %></td>
         <td class="p-2 border"><%= fund.campus %></td>
