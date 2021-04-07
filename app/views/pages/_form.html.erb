@@ -1,0 +1,31 @@
+<%= form_with(model: page) do |form| %>
+  <% if page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(page.errors.count, "error") %> prohibited this page from being saved:</h2>
+
+      <ul>
+        <% page.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-flow-row auto-rows-max gap-3">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: "w-full" %>
+
+    <% if form.object.persisted? %>
+      <%= form.label :slug %>
+      <%= form.text_field :slug, class: "w-full" %>
+    <% end %>
+
+    <%= form.label :main_image %>
+    <%= form.file_field :main_image, direct_upload: true, class: "w-full" %>
+
+    <%= form.label :content %>
+    <%= form.rich_text_area :content, class: "w-full" %>
+
+    <%= form.submit "Save", class: "p-3 bg-blue-500 text-white rounded shadow w-full" %>
+  </div>
+<% end %>

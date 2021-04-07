@@ -11,53 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="grid grid-flow-row auto-rows-max gap-3">
     <%= form.label :title %>
     <%= form.text_field :title %>
-  </div>
 
-  <% if form.object.persisted? %>
-    <%= form.label :slug %>
-    <%= form.text_field :slug, class: "w-full" %>
-  <% end %>
+    <% if form.object.persisted? %>
+      <%= form.label :slug %>
+      <%= form.text_field :slug, class: "w-full" %>
+    <% end %>
 
-  <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
+    <%= form.text_field :description, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :allocation_code %>
-    <%= form.text_field :allocation_code %>
-  </div>
+    <%= form.text_field :allocation_code, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :marketing_content %>
-    <%= form.rich_text_area :marketing_content %>
-  </div>
+    <%= form.rich_text_area :marketing_content, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :campus %>
-    <%= form.text_field :campus %>
-  </div>
+    <%= form.text_field :campus, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :keywords %>
-    <%= form.text_field :keywords %>
-  </div>
+    <%= form.text_field :keywords, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :interest %>
-    <%= form.text_field :interest %>
-  </div>
+    <%= form.text_field :interest, class: "w-full" %>
 
-  <div class="field">
     <%= form.label :suggested_amount %>
-    <%= form.number_field :suggested_amount %>
-  </div>
+    <%= form.number_field :suggested_amount, class: "w-full" %>
 
-
-  <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
   </div>
 <% end %>

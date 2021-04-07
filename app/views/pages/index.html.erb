@@ -1,0 +1,31 @@
+<div class="flex justify-between items-center">
+  <h1 class="text-3xl my-4">Listing Pages, Dude!</h1>
+  <span class="text-white p-3 rounded shadow" style="background-color:#CFB87C;">
+    <%= link_to 'New Page', new_page_path %>
+  </span>
+</div>
+
+<table class="table-auto border-collapse border mb-3 w-full">
+  <thead>
+    <tr>
+      <th class="border p-2">Title</th>
+      <th class="border p-2">Updated At</th>
+      <th class="border p-2">Operations</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td class="p-2 border"><%= link_to page.title, page, class: "text-blue-600 underline" %></td>
+        <td class="p-2 border"><%= page.updated_at %></td>
+        <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
+          <span class="bg-blue-600 p-2 rounded shadow"><%= link_to 'Edit', edit_page_path(page) %></span>
+          <%# <span class="bg-red-600 p-2 rounded shadow"><%= link_to 'X', page, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%# <%= raw pagy_nav(@pagy) %>

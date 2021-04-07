@@ -67,7 +67,6 @@ class FundsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_fund
       @fund = Fund.friendly.find(params[:id])
-
       if params[:id] != @fund.slug
         redirect_to @fund
       end
