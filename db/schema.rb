@@ -65,12 +65,16 @@ ActiveRecord::Schema.define(version: 2021_04_05_144405) do
   end
 
   create_table "funds", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.string "allocation_code"
+    t.string "title", null: false
+    t.string "description", null: false
+    t.string "allocation_code", null: false
+    t.boolean "featured_fund", default: false
+    t.boolean "priority_fund", default: false
+    t.boolean "active", default: false
     t.string "campus"
     t.string "keywords"
     t.string "interest"
+    t.string "fund_type"
     t.integer "suggested_amount", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

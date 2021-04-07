@@ -2,8 +2,11 @@
   "name": "cadet",
   "private": true,
   "scripts": {
+    "db:reset": "./bin/rake db:drop && ./bin/rake db:create && ./bin/rake db:migrate && ./bin/rake db:seed",
     "test": "cypress run --spec \"cypress/integration/**/*\"",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "dev": "./bin/rails s",
+    "reindex": "./bin/rake algoliasearch:reindex"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
