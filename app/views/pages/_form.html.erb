@@ -20,6 +20,15 @@
       <%= form.text_field :slug, class: "w-full" %>
     <% end %>
 
+    <div>
+      <% if @page.main_image.attached? %>
+        <%= image_tag @page.main_image, width: 300, class: "shadow border" %>
+        <strong>Filename: </strong><%= @page.main_image.filename %>
+        <strong>Metadata: </strong><%= @page.main_image.metadata %>
+        <strong>Content Type: </strong><%= @page.main_image.content_type %>
+      <% end %>
+    </div>
+
     <%= form.label :main_image %>
     <%= form.file_field :main_image, direct_upload: true, class: "w-full" %>
 
