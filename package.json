@@ -3,10 +3,12 @@
   "private": true,
   "scripts": {
     "db:reset": "./bin/rake db:drop && ./bin/rake db:create && ./bin/rake db:migrate && ./bin/rake db:seed",
+    "db:create": "./bin/rake db:create && ./bin/rake db:migrate && ./bin/rake db:seed",
     "db:migrate": "./bin/rake db:migrate",
     "test": "cypress run --spec \"cypress/integration/**/*\"",
     "cy:open": "cypress open",
     "dev": "./bin/rails s",
+    "services:start": "docker-compose up -d",
     "reindex": "./bin/rake algoliasearch:reindex"
   },
   "dependencies": {

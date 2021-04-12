@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Page.create({
-  title: "First Page",
+  title: "About Us",
+  slug: "about-us",
 });
 
 require 'csv'

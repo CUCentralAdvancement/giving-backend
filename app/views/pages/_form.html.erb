@@ -35,6 +35,11 @@
     <%= form.label :content %>
     <%= form.rich_text_area :content, class: "w-full" %>
 
+    <div class="flex flex-row items-center">
+      <%= form.check_box :published, class: "mr-2" %>
+      <%= form.label :published %>
+    </div>
+
     <%= form.submit "Save", class: "p-3 bg-blue-500 text-white rounded shadow w-full" %>
   </div>
 <% end %>

@@ -1,7 +1,7 @@
 <div class="flex justify-between items-center">
   <h1 class="text-3xl my-4">Listing Funds, Dude!</h1>
   <span class="text-white p-3 rounded shadow" style="background-color:#CFB87C;">
-    <%= link_to 'New Fund', new_fund_path %>
+    <%= link_to 'New Fund', new_fund_path, class: "text-white no-underline" %>
   </span>
 </div>
 
@@ -26,7 +26,7 @@
         <td class="p-2 border"><%= fund.campus %></td>
         <td class="p-2 border"><%= fund.updated_at %></td>
         <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
-          <span class="bg-blue-600 p-2 rounded shadow"><%= link_to 'Edit', edit_fund_path(fund) %></span>
+          <span class="bg-blue-600 p-2 rounded shadow"><%= link_to 'Edit', edit_fund_path(fund), class: "text-white no-underline" %></span>
           <%# <span class="bg-red-600 p-2 rounded shadow"><%= link_to 'X', fund, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>

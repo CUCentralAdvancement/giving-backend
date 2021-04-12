@@ -3,7 +3,7 @@ class CreatePages < ActiveRecord::Migration[6.1]
     create_table :pages do |t|
       t.string :title, null: false
       t.string :slug, null: false
-      t.string :status, default: "draft"
+      t.string :published, default: false
 
       t.timestamps
     end
