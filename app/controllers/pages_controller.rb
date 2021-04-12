@@ -6,7 +6,11 @@ class PagesController < ApplicationController
 
   # GET /pages or /pages.json
   def index
-    @pages = Page.all
+    @pages = Page.all.with_rich_text_content_and_embeds
+  end
+
+  def paths
+    @paths = Page.pluck(:slug)
   end
 
   # GET /pages/1 or /pages/1.json
@@ -70,6 +74,6 @@ class PagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def page_params
-      params.require(:page).permit(:title, :slug, :content, :main_image)
+      params.require(:page).permit(:title, :slug, :content, :main_image, :published)
     end
 end

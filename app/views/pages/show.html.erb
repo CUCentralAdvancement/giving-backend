@@ -10,7 +10,9 @@
   <%= @page.slug %>
 </p>
 
-<%= image_tag @page.main_image, width: 300, class: "shadow border" %>
+<% if @page.main_image.attached? %>
+  <%= image_tag @page.main_image, width: 300, class: "shadow border" %> 
+<% end  %>
 
 <div class="py-3">
   <%= @page.content %>
