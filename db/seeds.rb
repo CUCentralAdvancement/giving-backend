@@ -5,13 +5,30 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+faq_cats = {'Common Giving Terms': 0, 'Ways to Give': 1, 'General Questions About Giving at CU': 2}
 
 Page.create({
   title: "About Us",
   slug: "about-us",
 });
 
-require 'csv'
+puts "Created About Us Page..."
+
+puts "\n\n\nCreating FAQ pages \n\n\n"
+faqs_seed_path = "#{Rails.root}/db/faqs-seed.json"
+faqs = JSON.parse(File.read(faqs_seed_path))
+faqs.each do |faq|
+  Faq.create({
+    title: faq['title'],
+    content: faq['content'],
+    category: faq['category'].to_i
+  })
+  puts faq['title']
+end
+
+puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
   Fund.create({
     title: row['title'],
