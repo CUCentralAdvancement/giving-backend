@@ -1,0 +1,35 @@
+<div class="flex justify-between items-center">
+  <h1 class="text-3xl my-4">Listing FAQs!</h1>
+  <span class="text-white bg-gold p-3 rounded shadow">
+    <%= link_to 'New FAQ', new_faq_path, class: "text-white no-underline" %>
+  </span>
+</div>
+
+<table class="table-auto border-collapse border mb-3 w-full">
+  <thead>
+    <tr>
+      <th class="border p-2">Title</th>
+      <th class="border p-2">Category</th>
+      <th class="border p-2">Content</th>
+      <th class="border p-2">Updated At</th>
+      <th class="border p-2">Operations</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faqs.each do |faq| %>
+      <tr>
+        <td class="p-2 border"><%= link_to faq.title, faq %></td>
+        <td class="p-2 border"><%= faq.category %></td>
+        <td class="p-2 border"><%= faq.content %></td>
+        <td class="p-2 border"><%= faq.updated_at %></td>
+        <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
+          <span class="bg-blue-600 p-2 rounded shadow"><%= link_to 'Edit', edit_faq_path(faq), class: "text-white no-underline" %></span>
+          <%# <span class="bg-red-600 p-2 rounded shadow"><%= link_to 'X', faq, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= raw pagy_nav(@pagy) %>

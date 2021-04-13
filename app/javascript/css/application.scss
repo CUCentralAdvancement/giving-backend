@@ -34,3 +34,7 @@
     @apply underline text-blue-600;
   }
 }
+
+.trix-content p {
+  @apply my-4;
+}

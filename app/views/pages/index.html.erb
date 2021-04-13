@@ -1,6 +1,6 @@
 <div class="flex justify-between items-center">
   <h1 class="text-3xl my-4">Listing Pages, Dude!</h1>
-  <span class="text-white p-3 rounded shadow" style="background-color:#CFB87C;">
+  <span class="text-white bg-gold p-3 rounded shadow">
     <%= link_to 'New Page', new_page_path %>
   </span>
 </div>
@@ -17,7 +17,7 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr>
-        <td class="p-2 border"><%= link_to page.title, page, class: "text-blue-600 underline" %></td>
+        <td class="p-2 border"><%= link_to page.title, page %></td>
         <td class="p-2 border"><%= page.updated_at %></td>
         <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
           <span class="bg-blue-600 p-2 rounded shadow"><%= link_to 'Edit', edit_page_path(page) %></span>

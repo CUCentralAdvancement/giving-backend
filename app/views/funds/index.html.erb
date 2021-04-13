@@ -1,6 +1,6 @@
 <div class="flex justify-between items-center">
   <h1 class="text-3xl my-4">Listing Funds, Dude!</h1>
-  <span class="text-white p-3 rounded shadow" style="background-color:#CFB87C;">
+  <span class="text-white bg-gold p-3 rounded shadow">
     <%= link_to 'New Fund', new_fund_path, class: "text-white no-underline" %>
   </span>
 </div>
@@ -20,7 +20,7 @@
   <tbody>
     <% @funds.each do |fund| %>
       <tr>
-        <td class="p-2 border"><%= link_to fund.title, fund, class: "text-blue-600 underline" %></td>
+        <td class="p-2 border"><%= link_to fund.title, fund %></td>
         <td class="p-2 border"><%= fund.description %></td>
         <td class="p-2 border"><%= fund.allocation_code %></td>
         <td class="p-2 border"><%= fund.campus %></td>

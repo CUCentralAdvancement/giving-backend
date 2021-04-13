@@ -1,0 +1,31 @@
+<%= form_with(model: faq) do |form| %>
+  <% if faq.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(faq.errors.count, "error") %> prohibited this faq from being saved:</h2>
+
+      <ul>
+        <% faq.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-flow-row auto-rows-max gap-3">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: "w-full" %>
+
+    <% if form.object.persisted? %>
+      <%= form.label :slug %>
+      <%= form.text_field :slug, class: "w-full" %>
+    <% end %>
+
+    <%= form.label :category %>
+    <%= form.number_field :category %>
+
+    <%= form.label :content %>
+    <%= form.rich_text_area :content, class: "w-full" %>
+    
+    <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
+  </div>
+<% end %>
