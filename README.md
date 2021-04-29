@@ -39,6 +39,12 @@ ruby-2.7.3
 ruby 2.7.3
 ```
 
+## Database
+
+The database is served via Heroku Postgres...blah blah
+
+- Need to add emoji support to this and the order processing app.
+
 ---
 
 Things you may want to cover:
