@@ -6,8 +6,8 @@ Backend for the giving.cu.edu site.
 
 Local development is done via Docker and `asdf`...need to link to install instructions for both.
 
-- Docker - 
-- asdf - link to ADR, maybe? https://asdf-vm.com/#/
+- Docker Compose - https://docs.docker.com/compose/install/
+- asdf - https://asdf-vm.com/#/
 
 ```bash
 # Spin up Docker containers.
