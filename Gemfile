@@ -61,6 +61,6 @@ gem "pagy", "~> 3.12"
 
 gem "friendly_id", "~> 5.4"
 
-gem "algoliasearch-rails", "~> 1.25"
+gem "algoliasearch-rails", "~> 2.0"
 
 gem "cloudinary", "~> 1.20"
