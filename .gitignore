@@ -36,3 +36,9 @@ yarn-debug.log*
 .yarn-integrity
 
 .env
+
+# IntelliJ
+*.idea
+
+# MacOS
+*.DS_STORE

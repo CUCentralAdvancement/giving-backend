@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   # def current_user
   #   @current_user ||= session[:user]
-    
+
   #   # In the future, the user will exist in the db and be linked via email.
   #   # @current_user ||= User.find_by(email: session[:user]['info']['email'])
   # end
@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
 
   def authenticate_user!
     return if user_signed_in?
-
     redirect_to root_path, alert: "You must be signed in to continue."
   end
 end
