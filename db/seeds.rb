@@ -42,7 +42,7 @@ CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
     interest: row['interest'],
     fund_type: row['fund_type'],
     suggested_amount: row['suggested_amount'],
-    marketing_content: row['marketing_content'],
+    content: row['marketing_content'],
   })
   puts row['title']
 end

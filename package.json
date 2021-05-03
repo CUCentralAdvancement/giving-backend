@@ -7,7 +7,7 @@
     "db:migrate": "./bin/rake db:migrate",
     "test": "cypress run --spec \"cypress/integration/**/*\"",
     "cy:open": "cypress open",
-    "dev": "./bin/rails s",
+    "dev": "./bin/rails s -p 5031",
     "services:start": "docker-compose up -d",
     "reindex": "./bin/rake algoliasearch:reindex"
   },

@@ -10,7 +10,7 @@ RSpec.describe "funds/edit", type: :view do
       keywords: "MyString",
       interest: "MyString",
       suggested_amount: 1,
-      marketing_content: "MyString"
+      content: "MyString"
     ))
   end
 
@@ -33,7 +33,7 @@ RSpec.describe "funds/edit", type: :view do
 
       assert_select "input[name=?]", "fund[suggested_amount]"
 
-      assert_select "input[name=?]", "fund[marketing_content]"
+      assert_select "input[name=?]", "fund[content]"
     end
   end
 end

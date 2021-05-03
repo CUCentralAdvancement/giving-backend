@@ -11,7 +11,7 @@ RSpec.describe "funds/index", type: :view do
         keywords: "Keywords",
         interest: "Interest",
         suggested_amount: 2,
-        marketing_content: "Marketing Content"
+        content: "Marketing Content"
       ),
       Fund.create!(
         title: "Title",
@@ -21,7 +21,7 @@ RSpec.describe "funds/index", type: :view do
         keywords: "Keywords",
         interest: "Interest",
         suggested_amount: 2,
-        marketing_content: "Marketing Content"
+        content: "Marketing Content"
       )
     ])
   end
