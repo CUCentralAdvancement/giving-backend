@@ -9,6 +9,7 @@
     "cy:open": "cypress open",
     "dev": "./bin/rails s",
     "services:start": "docker-compose up -d",
+    "services:stop": "docker-compose down",
     "reindex": "./bin/rake algoliasearch:reindex"
   },
   "dependencies": {

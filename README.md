@@ -11,6 +11,9 @@ instructions for both.
 - asdf - https://asdf-vm.com/#/
 
 ```bash
+# Copy example env file and get creds from Heroku.
+cp .env.example .env
+
 # Use asdf to set local tool versions in .tool-versions.
 # Example for Ruby: `asdf shell ruby 2.7.3`
 
