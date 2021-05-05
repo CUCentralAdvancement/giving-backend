@@ -69,7 +69,7 @@ GEM
       json (>= 1.5.1)
     aws_cf_signer (0.1.3)
     bindex (0.8.1)
-    bootsnap (1.7.3)
+    bootsnap (1.7.5)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
