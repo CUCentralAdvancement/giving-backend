@@ -53,7 +53,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem "omniauth-auth0", "~> 2.6"
+gem "omniauth-auth0", "~> 3.0"
 
 gem "omniauth-rails_csrf_protection", "~> 0.1.2"
 
