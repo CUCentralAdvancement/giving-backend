@@ -4,8 +4,7 @@ Backend for the giving.cu.edu site.
 
 ## Local Dev Setup
 
-Local development is done via Docker and `asdf`...need to link to install 
-instructions for both.
+Local development is done via Docker and `asdf`...need to link to install instructions for both.
 
 - Docker Compose - https://docs.docker.com/compose/install/
 - asdf - https://asdf-vm.com/#/
@@ -35,13 +34,13 @@ yarn dev
 
 ## Updating Ruby
 
-The current version of Ruby listed in `Gemfile` and `.ruby-version` will determine 
-how Bundler adds and installs Gems. You will occasionally need to update Ruby to 
-the latest version, and Heroku nicely points out old Ruby versions in build logs.
+The current version of Ruby listed in `Gemfile` and `.ruby-version` will determine how Bundler adds
+and installs Gems. You will occasionally need to update Ruby to the latest version, and Heroku
+nicely points out old Ruby versions in build logs.
 
-The syntax for updating versions is simple, but for some reason, it's different 
-across the three Ruby version config files...why is there three? I know one is 
-for `asdf` versioning...and more info on that should be added here once written up.
+The syntax for updating versions is simple, but for some reason, it's different across the three
+Ruby version config files...why is there three? I know one is for `asdf` versioning...and more info
+on that should be added here once written up.
 
 ```
 # Gemfile
@@ -58,34 +57,32 @@ ruby 2.7.3
 
 User authentication is handled via Auth0 and two Gems:
 
-- `omniauth-auth0` - Provides Auth0 integration to `omniauth` as well as that 
-  base gem.
-- `omniauth-rails_csrf_protection` - Provides a form token used in omniauth 
-  communication.
-  
+- `omniauth-auth0` - Provides Auth0 integration to `omniauth` as well as that base gem.
+- `omniauth-rails_csrf_protection` - Provides a form token used in omniauth communication.
+
 Integration followed official Auth0 documentation:
 https://auth0.com/docs/quickstart/webapp/rails
-  
+
 ### Initialization and Routes
 
-Omniauth is a Rack-based middleware that gets initialized in the 
-`/config/initializers/auth0.rb` file. No changes were made from those
-listed in the Auth0 tutorial guide. Similarly, `/config/routes.rb` has the 
-same routes with the same controller actions as mentioned in the tutorial.
+Omniauth is a Rack-based middleware that gets initialized in the
+`/config/initializers/auth0.rb` file. No changes were made from those listed in the Auth0 tutorial
+guide. Similarly, `/config/routes.rb` has the same routes with the same controller actions as
+mentioned in the tutorial.
 
 ### Controller and View Integration
 
-For the application developer, there are several useful functions that can
-be used to control authorization to routes and in views.
+For the application developer, there are several useful functions that can be used to control
+authorization to routes and in views.
 
 - `authenticate_user!` can be used in any controller as a `before_action`.
-- `user_signed_in?` can be used in views conditionally showing/hiding
-user interface items based on authentication status.
-  
+- `user_signed_in?` can be used in views conditionally showing/hiding user interface items based on
+  authentication status.
+
 ### Further Work
 
-A `User` model needs to be created to attach the user session info to. That 
-model would include a way to associate accounts of which Auth0 would be one.
+A `User` model needs to be created to attach the user session info to. That model would include a
+way to associate accounts of which Auth0 would be one.
 
 ## Database
 
