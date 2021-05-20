@@ -64,3 +64,5 @@ gem "friendly_id", "~> 5.4"
 gem "algoliasearch-rails", "~> 2.0"
 
 gem "cloudinary", "~> 1.20"
+
+gem "scout_apm", "~> 4.0"
