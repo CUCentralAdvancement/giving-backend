@@ -66,3 +66,5 @@ gem "algoliasearch-rails", "~> 2.0"
 gem "cloudinary", "~> 1.20"
 
 gem "scout_apm", "~> 4.0"
+
+gem "newrelic_rpm", "~> 7.0"
