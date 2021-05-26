@@ -1,8 +1,37 @@
-# Giving Backend
+# Project Title
 
-Backend for the giving.cu.edu site.
+Intro sentence on the purpose of the project.
 
-## Local Dev Setup
+The readme will flow from the perspective of a new developer being on-boarded to your project. Each
+project readme template should be filled in by the dev who created the project, and it needs to be
+finished before other developers should be asked to work on any project.
+
+## Features
+
+It helps to orient the new developer to the main purpose of the app. It will also help you as you
+start working on the features since the only records you'll have exist in issue comments.
+
+...
+
+## Stack and Services
+
+Describe stack...
+
+The first step of the local development install instructions is to set up environmental variables
+for the services being used. Some install scripts require those variables to be present when ran so
+it's important to list out the different services a developer will need to connect to.
+
+Most of the environmental variables will be listed in Heroku's admin UI, but make sure to mention
+where to find the config info.
+
+Services:
+
+- Something for media hosting
+- Something for search
+- Something for background worker/queue processing
+- I think you get the point...
+
+## Local Development Setup
 
 Local development is done via Docker and `asdf`...need to link to install instructions for both.
 
@@ -53,61 +82,88 @@ ruby-2.7.3
 ruby 2.7.3
 ```
 
-## Auth0
+As you can see, `yarn` is the standard for running commands. Rather than using different tools to
+run shell commands, standardizing on `yarn` allows us to better group commands and run them
+similarly on Heroku and locally.
 
-User authentication is handled via Auth0 and two Gems:
+...should list the command prefixes:
 
-- `omniauth-auth0` - Provides Auth0 integration to `omniauth` as well as that base gem.
-- `omniauth-rails_csrf_protection` - Provides a form token used in omniauth communication.
+- deps - Things to do with package management
+- services - Things to do with Docker.
+- db - Things to do with data.
+- app - Things to do with the application server
 
-Integration followed official Auth0 documentation:
-https://auth0.com/docs/quickstart/webapp/rails
+After you finish writing the section, clone down your repository in a fresh directory to see if you
+can follow the instructions and get a working site. Often times, there's one or two key instructions
+left out in the first draft.
 
-### Initialization and Routes
+## Testing
 
-Omniauth is a Rack-based middleware that gets initialized in the
-`/config/initializers/auth0.rb` file. No changes were made from those listed in the Auth0 tutorial
-guide. Similarly, `/config/routes.rb` has the same routes with the same controller actions as
-mentioned in the tutorial.
+Now that the developer has the project setup, server running locally, and they are connected to any
+necessary services, they should run the available tests and make sure they are green. Furthermore,
+some sort of CI testing should be set up to run on each pull request to the main branch.
 
-### Controller and View Integration
+...need to link to testing methods docs/repo.
 
-For the application developer, there are several useful functions that can be used to control
-authorization to routes and in views.
+## Deployment
 
-- `authenticate_user!` can be used in any controller as a `before_action`.
-- `user_signed_in?` can be used in views conditionally showing/hiding user interface items based on
-  authentication status.
+Now that the developer has green tests and everything running, they are about ready to work on
+issues in the backlog. The last step is to make sure they know how to deploy the application. You
+should include everything around hosting and deploying the app.
 
-### Further Work
+Things to include:
 
-A `User` model needs to be created to attach the user session info to. That model would include a
-way to associate accounts of which Auth0 would be one.
+- Review app process and testing. Any caveats vs. staging and production?
+- Any release scripts and how they work.
+- How to monitor the deployment via addons and logs.
+- Any troubleshooting tips related to current/past deployment issues.
+- What is the SLA for service disruption resolution?
+- Ways to run "smoke tests" after a deploy, if that makes sense.
 
-## Database
+## Additional Docs
 
-The database is served via Heroku Postgres...blah blah
+You'll inevitably have more information to write down about all the topics above. For instance,
+detailing how you use a hosted search addon can be in its own documentation article linked to the
+section where you first describe the "Services" used in the project.
 
-- Need to add emoji support to this and the order processing app.
+Place these docs in a `/docs` section of your repo.
 
----
+### Fund Model Slugs 
 
-Things you may want to cover:
+Need to document the Fund model and the rules for creating slugs and avoiding the license plate 
+and write-in routes.
 
-* Ruby version
+Reserved slugs:
+- "write-fund"
+- "cu-anschutz-alumni-license-plate-fund"
+- "cu-scholarship-license-plate-fund"
+- "cu-denver-alumni-license-plate-program"
 
-* System dependencies
+## Production Checklist
 
-* Configuration
+Heroku
+has [a list of recommended steps to take](https://devcenter.heroku.com/articles/production-check)
+before launching an application into production. The Digital Engagement team also has a few
+recommendations to complete before launching anything into production.
 
-* Database creation
+Copy the checklist here and complete all items before launching the app into production on Heroku.
 
-* Database initialization
+GitHub:
 
-* How to run the test suite
+- [ ] Dependabot set up for timely dependency updates
+- [ ] System and unit tests run on each PR before being merged into the main branch
+- [ ] Code linting runs on each PR before being merged into the main branch
+- [ ] Linters or scanners show no accessibility issues while using the app
+- [ ] CodeQL or similar scanner for preventing sensitive info in commits
+- [ ] Alerts for security issues sent to Slack alerts channel
+- [ ] Readme template is completely filled in including this production checklist
+- [ ] Security policy filled out for reporting project issues relates to security.
 
-* Services (job queues, cache servers, search engines, etc.)
+Heroku's Production Environment:
 
-* Deployment instructions
-
-* ...
+- [ ] At least two dynos each for web and workers are running in production for redundancy
+- [ ] If database, use a production tier database
+- [ ] Backup schedule and DR for databases, media assets
+- [ ] App monitoring tool and alerts set up
+- [ ] Log monitoring tool and alerts set up
+- [ ] SLA agreed upon and written down for service uptime and maintenance
