@@ -12,7 +12,7 @@ faq_cats = {'Common Giving Terms': 0, 'Ways to Give': 1, 'General Questions Abou
 Page.create({
   title: "About Us",
   slug: "about-us",
-});
+})
 
 puts "Created About Us Page..."
 
@@ -32,17 +32,17 @@ puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
   Fund.create({
     title: row['title'],
+    fund_owners: row['fund_owners'],
     description: row['description'],
+    marketing_content: row['marketing_content'],
+    marketing_content_expiration: row['marketing_content_expiration'],
     allocation_code: row['allocation_code'],
-    priority_fund: row['priority_fund'],
+    suggested_amount: row['suggested_amount'],
     featured_fund: row['featured_fund'],
     active: row['active'],
     campus: row['campus'],
     keywords: row['keywords'],
-    interest: row['interest'],
-    fund_type: row['fund_type'],
-    suggested_amount: row['suggested_amount'],
-    marketing_content: row['marketing_content'],
+    interest: row['interest']
   })
   puts row['title']
 end

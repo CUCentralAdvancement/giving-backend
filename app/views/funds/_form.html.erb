@@ -5,7 +5,7 @@
 
       <ul>
         <% fund.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <li class="bg-red p-4 text-white"><%= error.full_message %></li>
         <% end %>
       </ul>
     </div>
@@ -20,14 +20,33 @@
       <%= form.text_field :slug, class: "w-full" %>
     <% end %>
 
+    <%= form.label :fund_owners %>
+    <%= form.text_field :fund_owners, class: "w-full" %>
+
     <%= form.label :description %>
     <%= form.text_field :description, class: "w-full" %>
+
+    <%= form.label :marketing_content %>
+    <%= form.rich_text_area :marketing_content, class: "w-full" %>
+
+    <%= form.label :marketing_content_expiration %>
+    <%= form.datetime_select :marketing_content_expiration, class: "w-full" %>
 
     <%= form.label :allocation_code %>
     <%= form.text_field :allocation_code, class: "w-full" %>
 
-    <%= form.label :marketing_content %>
-    <%= form.rich_text_area :marketing_content, class: "w-full" %>
+    <%= form.label :suggested_amount %>
+    <%= form.number_field :suggested_amount, class: "w-full" %>
+
+    <div class="flex flex-row items-center">
+      <%= form.check_box :featured_fund, class: "mr-2" %>
+      <%= form.label :featured_fund %>
+    </div>
+
+    <div class="flex flex-row items-center">
+      <%= form.check_box :active, class: "mr-2" %>
+      <%= form.label :active %>
+    </div>
 
     <%= form.label :campus %>
     <%= form.text_field :campus, class: "w-full" %>
@@ -37,9 +56,6 @@
 
     <%= form.label :interest %>
     <%= form.text_field :interest, class: "w-full" %>
-
-    <%= form.label :suggested_amount %>
-    <%= form.number_field :suggested_amount, class: "w-full" %>
 
     <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
   </div>

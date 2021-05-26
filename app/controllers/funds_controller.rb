@@ -1,7 +1,6 @@
 class FundsController < ApplicationController
   before_action :set_fund, only: %i[ show edit update destroy ]
   # before_action :authenticate_user!
-  
   include Pagy::Backend
 
   # GET /funds or /funds.json
@@ -64,16 +63,20 @@ class FundsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_fund
-      @fund = Fund.friendly.find(params[:id])
-      if params[:id] != @fund.slug
-        redirect_to @fund
-      end
-    end
 
-    # Only allow a list of trusted parameters through.
-    def fund_params
-      params.require(:fund).permit(:title, :slug, :description, :allocation_code, :featured_fund, :priority_fund, :active, :campus, :keywords, :interest, :fund_type, :suggested_amount, :marketing_content)
+  # Use callbacks to share common setup or constraints between actions.
+  def set_fund
+    @fund = Fund.friendly.find(params[:id])
+    if params[:id] != @fund.slug
+      redirect_to @fund
     end
+  end
+
+  # Only allow a list of trusted parameters through.
+  def fund_params
+    params.require(:fund).permit(:title, :slug, :fund_owners, :description, :marketing_content,
+                                 :marketing_content_expiration, :allocation_code,
+                                 :suggested_amount, :featured_fund, :active, :campus, :keywords,
+                                 :interest)
+  end
 end
