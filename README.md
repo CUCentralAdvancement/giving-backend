@@ -2,14 +2,14 @@
 
 Intro sentence on the purpose of the project.
 
-The readme will flow from the perspective of a new developer being on-boarded to your project. Each
-project readme template should be filled in by the dev who created the project, and it needs to be
-finished before other developers should be asked to work on any project.
+The readme will flow from the perspective of a new developer being on-boarded to your project. Each project
+readme template should be filled in by the dev who created the project, and it needs to be finished before
+other developers should be asked to work on any project.
 
 ## Features
 
-It helps to orient the new developer to the main purpose of the app. It will also help you as you
-start working on the features since the only records you'll have exist in issue comments.
+It helps to orient the new developer to the main purpose of the app. It will also help you as you start
+working on the features since the only records you'll have exist in issue comments.
 
 ...
 
@@ -17,12 +17,12 @@ start working on the features since the only records you'll have exist in issue 
 
 Describe stack...
 
-The first step of the local development install instructions is to set up environmental variables
-for the services being used. Some install scripts require those variables to be present when ran so
-it's important to list out the different services a developer will need to connect to.
+The first step of the local development install instructions is to set up environmental variables for the
+services being used. Some install scripts require those variables to be present when ran so it's important to
+list out the different services a developer will need to connect to.
 
-Most of the environmental variables will be listed in Heroku's admin UI, but make sure to mention
-where to find the config info.
+Most of the environmental variables will be listed in Heroku's admin UI, but make sure to mention where to
+find the config info.
 
 Services:
 
@@ -63,13 +63,13 @@ yarn dev
 
 ## Updating Ruby
 
-The current version of Ruby listed in `Gemfile` and `.ruby-version` will determine how Bundler adds
-and installs Gems. You will occasionally need to update Ruby to the latest version, and Heroku
-nicely points out old Ruby versions in build logs.
+The current version of Ruby listed in `Gemfile` and `.ruby-version` will determine how Bundler adds and
+installs Gems. You will occasionally need to update Ruby to the latest version, and Heroku nicely points out
+old Ruby versions in build logs.
 
-The syntax for updating versions is simple, but for some reason, it's different across the three
-Ruby version config files...why is there three? I know one is for `asdf` versioning...and more info
-on that should be added here once written up.
+The syntax for updating versions is simple, but for some reason, it's different across the three Ruby version
+config files...why is there three? I know one is for `asdf` versioning...and more info on that should be added
+here once written up.
 
 ```
 # Gemfile
@@ -82,9 +82,9 @@ ruby-2.7.3
 ruby 2.7.3
 ```
 
-As you can see, `yarn` is the standard for running commands. Rather than using different tools to
-run shell commands, standardizing on `yarn` allows us to better group commands and run them
-similarly on Heroku and locally.
+As you can see, `yarn` is the standard for running commands. Rather than using different tools to run shell
+commands, standardizing on `yarn` allows us to better group commands and run them similarly on Heroku and
+locally.
 
 ...should list the command prefixes:
 
@@ -93,23 +93,23 @@ similarly on Heroku and locally.
 - db - Things to do with data.
 - app - Things to do with the application server
 
-After you finish writing the section, clone down your repository in a fresh directory to see if you
-can follow the instructions and get a working site. Often times, there's one or two key instructions
-left out in the first draft.
+After you finish writing the section, clone down your repository in a fresh directory to see if you can follow
+the instructions and get a working site. Often times, there's one or two key instructions left out in the
+first draft.
 
 ## Testing
 
-Now that the developer has the project setup, server running locally, and they are connected to any
-necessary services, they should run the available tests and make sure they are green. Furthermore,
-some sort of CI testing should be set up to run on each pull request to the main branch.
+Now that the developer has the project setup, server running locally, and they are connected to any necessary
+services, they should run the available tests and make sure they are green. Furthermore, some sort of CI
+testing should be set up to run on each pull request to the main branch.
 
 ...need to link to testing methods docs/repo.
 
 ## Deployment
 
-Now that the developer has green tests and everything running, they are about ready to work on
-issues in the backlog. The last step is to make sure they know how to deploy the application. You
-should include everything around hosting and deploying the app.
+Now that the developer has green tests and everything running, they are about ready to work on issues in the
+backlog. The last step is to make sure they know how to deploy the application. You should include everything
+around hosting and deploying the app.
 
 Things to include:
 
@@ -122,29 +122,36 @@ Things to include:
 
 ## Additional Docs
 
-You'll inevitably have more information to write down about all the topics above. For instance,
-detailing how you use a hosted search addon can be in its own documentation article linked to the
-section where you first describe the "Services" used in the project.
+You'll inevitably have more information to write down about all the topics above. For instance, detailing how
+you use a hosted search addon can be in its own documentation article linked to the section where you first
+describe the "Services" used in the project.
 
 Place these docs in a `/docs` section of your repo.
 
-### Fund Model Slugs 
+### Fund Model Types
 
-Need to document the Fund model and the rules for creating slugs and avoiding the license plate 
-and write-in routes.
+Need to better document the Fund model and the caveats about license plate and write-in funds. The D7 version 
+of the site had three different content types for funds: donation, license plate, and write-in. The "donation" 
+type covers all but four discrete funds: three license plate funds and the write-in one.
 
-Reserved slugs:
-- "write-fund"
-- "cu-anschutz-alumni-license-plate-fund"
-- "cu-scholarship-license-plate-fund"
-- "cu-denver-alumni-license-plate-program"
+The D7 version of the site had a "fund type" field that is no longer used; however, that field is exactly 
+what is needed to differentiate the funds for frontend rendering needs. We'll start with the three types 
+and add more if needed.
+
+Fund Types:
+- **default** - Most funds will use the default frontend components built to demo the migrated UI.
+- **license_plate** - Three funds from different campuses will share this type. The Giving Form differs by 
+  fixing the donation at $50 and only asking for the "name on title" of the car. 
+- **write_in** - This fund has no allocation code or campus and the same Giving Form with the addition of a 
+  comments section. 
+
+Since the funds don't have the same schema in D7, the fund types will be added during the seeding process.
 
 ## Production Checklist
 
-Heroku
-has [a list of recommended steps to take](https://devcenter.heroku.com/articles/production-check)
-before launching an application into production. The Digital Engagement team also has a few
-recommendations to complete before launching anything into production.
+Heroku has [a list of recommended steps to take](https://devcenter.heroku.com/articles/production-check)
+before launching an application into production. The Digital Engagement team also has a few recommendations to
+complete before launching anything into production.
 
 Copy the checklist here and complete all items before launching the app into production on Heroku.
 

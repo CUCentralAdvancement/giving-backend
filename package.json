@@ -5,6 +5,7 @@
     "db:reset": "./bin/rake db:drop && ./bin/rake db:create && ./bin/rake db:migrate && ./bin/rake db:seed",
     "db:create": "./bin/rake db:create && ./bin/rake db:migrate && ./bin/rake db:seed",
     "db:migrate": "./bin/rake db:migrate",
+    "db:seed": "./bin/rake db:seed",
     "test": "cypress run --spec \"cypress/integration/**/*\"",
     "cy:open": "cypress open",
     "dev": "./bin/rails s",
