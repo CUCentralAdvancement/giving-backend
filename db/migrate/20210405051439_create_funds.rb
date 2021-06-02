@@ -14,6 +14,7 @@ class CreateFunds < ActiveRecord::Migration[6.1]
       t.string :keywords, null: true
       # @todo Change this to not nullable once all current funds have interests.
       t.string :interest, null: true
+      t.string :fund_type, null: false
 
       t.timestamps
     end

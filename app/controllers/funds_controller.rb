@@ -77,6 +77,6 @@ class FundsController < ApplicationController
     params.require(:fund).permit(:title, :slug, :fund_owners, :description, :marketing_content,
                                  :marketing_content_expiration, :allocation_code,
                                  :suggested_amount, :featured_fund, :active, :campus, :keywords,
-                                 :interest)
+                                 :interest, :fund_type)
   end
 end
