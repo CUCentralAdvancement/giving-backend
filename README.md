@@ -139,10 +139,10 @@ what is needed to differentiate the funds for frontend rendering needs. We'll st
 and add more if needed.
 
 Fund Types:
-- **Default** - Most funds will use the default frontend components built to demo the migrated UI.
-- **License Plate** - Three funds from different campuses will share this type. The Giving Form differs by 
+- **default** - Most funds will use the default frontend components built to demo the migrated UI.
+- **license_plate** - Three funds from different campuses will share this type. The Giving Form differs by 
   fixing the donation at $50 and only asking for the "name on title" of the car. 
-- **Write-in** - This fund has no allocation code or campus and the same Giving Form with the addition of a 
+- **write_in** - This fund has no allocation code or campus and the same Giving Form with the addition of a 
   comments section. 
 
 Since the funds don't have the same schema in D7, the fund types will be added during the seeding process.
