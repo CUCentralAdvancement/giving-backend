@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2021_04_12_040805) do
   create_table "pages", force: :cascade do |t|
     t.string "title", null: false
     t.string "slug", null: false
-    t.string "published", default: "f"
+    t.boolean "published", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["slug"], name: "index_pages_on_slug", unique: true

@@ -7,10 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
-
-
 puts "\n\n\nCreating Fund pages \n\n\n"
-CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
   # Deal with the three fund types.
   if 'Write-in Fund' == row['title']
     fund_type = "write_in"
@@ -23,11 +21,14 @@ CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
 
   Fund.create({
                 title: row['title'],
+                slug: row['path'].present? ? row['path'].gsub!('/fund/', '') : row['title'],
                 fund_owners: row['fund_owners'],
                 description: row['description'],
                 marketing_content: row['marketing_content'],
                 marketing_content_expiration: row['marketing_content_expiration'],
-                allocation_code: row['allocation_code'],
+                # Using a fake allocation code for write-in so it can be targeted elsewhere. The allocation
+                # code is the closest thing a fund has to a unique ID.
+                allocation_code: 'Write-in Fund' == row['title'] ? '9921871' : row['allocation_code'],
                 suggested_amount: row['suggested_amount'],
                 featured_fund: row['featured_fund'],
                 active: row['active'],
@@ -40,19 +41,26 @@ CSV.foreach(Rails.root.join('db/funds-seed.csv'), headers: true) do |row|
 end
 
 puts "\n\n\nCreating FAQ pages \n\n\n"
-faqs_seed_path = "#{Rails.root}/db/faqs-seed.json"
+faqs_seed_path = "#{Rails.root}/db/seeds/faqs-seed.json"
 faqs = JSON.parse(File.read(faqs_seed_path))
 faqs.each do |faq|
   Faq.create({
                title: faq['title'],
+               slug: faq['path'],
                content: faq['content'],
                category: faq['category'].to_i
              })
   puts faq['title']
 end
 
-Page.create({
-              title: "About Us",
-              slug: "about-us",
-            })
-puts "\n\n\nCreated About Us Page...\n\n\n"
+
+puts "\n\n\nCreating Pages...\n\n\n"
+CSV.foreach(Rails.root.join('db/seeds/pages-seed.csv'), headers: true) do |row|
+  Page.create({
+                title: row['title'],
+                slug: row['path'],
+                content: row['body'],
+                published: true
+              })
+  puts row['title']
+end

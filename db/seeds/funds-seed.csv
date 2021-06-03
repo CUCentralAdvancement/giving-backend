@@ -1,11 +1,11 @@
-"title","Fund Owners","description","marketing_content","marketing_content_expiration","allocation_code","suggested_amount","featured_fund","active","campus","keywords","interest"
+"title","fund_owners","description","marketing_content","marketing_content_expiration","allocation_code","suggested_amount","featured_fund","active","campus","keywords","interest","path"
 "Write-in Fund","","There are lots of giving opportunities and sometimes it’s difficult to locate the exact fund you’re looking for. If you’d like, you can follow the steps below to write in the fund you intend your gift to go to, and our internal processing team will work to direct your gift to the most appropriate fund.
 
 Select or enter the amount you wish to give, and whether or not this gift is in memory or in honor of someone.
 Use the Comments box to write in the fund name, description, allocation number (if you know it), and any other details that will help us direct your gift to the appropriate fund.
 Add the gift to your Gift Basket and continue browsing, or click “Give Now” to complete your donation.
 
-","","","","","","","","",""
+","","","","","","","","","","/fund/write-fund"
 "CU Anschutz Alumni License Plate Fund","","To fund scholarships for students at the Anschutz Medical Campus.
 
 
@@ -17,7 +17,7 @@ Step 3: Pay the required DMV fee for obtaining specialty plates (currently $50).
 
 
 
-","","","0221871","","","1","CU Anschutz","Alumni Association","Scholarships & Student Success"
+","","","0221871","","","1","CU Anschutz","Alumni Association","Scholarships & Student Success","/fund/cu-anschutz-alumni-license-plate-fund"
 "CU Denver Alumni License Plate Program","","To provide support for scholarships at the University of Colorado Denver through the purchase of a license plate.
 
 
@@ -29,12 +29,12 @@ Step 3: Pay the required DMV fee for obtaining specialty plates (currently $50).
 
 
 
-","","","0321445","","","1","CU Denver","Alumni Association","Alumni Programs"
+","","","0321445","","","1","CU Denver","Alumni Association","Alumni Programs","/fund/cu-denver-alumni-license-plate-program"
 "CU Scholarship License Plate Fund","","Obtaining a CU license plate in the state of Colorado is a three step process.
 Step 1: Make a scholarship donation to the Alumni Association of at least $50.
 Step 2: You will receive the State of Colorado certification (separate from the gift confirmation email) within 1 business day. Print this email or show it to the clerk at the DMV.
 Step 3: Pay the required DMV fee for obtaining specialty plates (currently $50).
-","","","0122509","","","1","CU Boulder","Alumni Association","Alumni Programs"
+","","","0122509","","","1","CU Boulder","Alumni Association","Alumni Programs","/fund/cu-scholarship-license-plate-fund"
 "UCCS Faculty and Alumni Scholarship Fund","diane.dickerson@uccs.edu","To provide scholarship awards at the University of Colorado Colorado Springs for undergraduates who meet the same need-based selection criteria as the Bridge Forward Scholarship.
 ","#myBtn1, #myBtn2 {
     background-color: #fff;
@@ -240,349 +240,349 @@ window.onclick = function(event) {
     modal.style.display = ""none"";
   }
 }
-","","0421667","","1","1","UCCS","Office of Financial Aid and Student Employment","Scholarships & Student Success"
+","","0421667","","1","1","UCCS","Office of Financial Aid and Student Employment","Scholarships & Student Success","/fund/uccs-faculty-and-alumni-scholarship-fund"
 "CU Denver Employee Emergency Relief Fund","monica.cutler@ucdenver.edu","To provide support for staff and faculty at the University of Colorado Denver who are experiencing a financial emergency that could adversely affect them as they serve the campus and its students.
-","","Friday, June 5, 2020","0322037","","1","1","CU Denver","Emergency Support","Community & Society"
+","","Friday, June 5, 2020","0322037","","1","1","CU Denver","Emergency Support","Community & Society","/fund/cu-denver-employee-emergency-relief-fund"
 "Staff and Faculty Emergency Fund","","To support staff and faculty at the University of Colorado Boulder who are experiencing a crisis that could adversely affect them as they serve the campus and our students.
 ","To support staff and faculty at the University of Colorado Boulder who are experiencing a crisis that could adversely affect them as they serve the campus and our students.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0126033","","1","1","CU Boulder","Campus Programs, Emergency Support","Community & Society"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0126033","","1","1","CU Boulder","Campus Programs, Emergency Support","Community & Society","/fund/staff-and-faculty-emergency-fund"
 "UCCS Community Support Scholarship Fund","","To support UCCS degree seeking students who have experienced a one-time unexpected financial hardship. Awards are given to support any resource needs associated with the cost of attendance.
 ","To support UCCS degree seeking students who have experienced a one-time unexpected financial hardship. Awards are given to support any resource needs associated with the cost of attendance.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0421665","","1","1","UCCS","Emergency Support","Scholarships & Student Success"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0421665","","1","1","UCCS","Emergency Support","Scholarships & Student Success","/fund/uccs-community-support-scholarship-fund"
 "Bridge Forward Scholarship Endowment","","To provide scholarship awards at the University of Colorado Colorado Springs for undergraduate students with an Expected Family Contribution up to 250% above Pell Grant eligibility or similar financial need program.
 ","Double your impact today!
 Your commitment to hard-working students will inspire possibilities now and leave a mark well into the future. Thanks to a generous alumni donor, each gift will be matched dollar for dollar!
  
 Gifts to this fund are made available for immediate use for Bridge Forward scholarship awards and are not invested as part of the endowment. Click here to make a gift to the endowment.
-","","0430106","","1","1","UCCS","","Scholarships & Student Success"
+","","0430106","","1","1","UCCS","","Scholarships & Student Success","/fund/bridge-forward-scholarship"
 "University of Colorado Denver COSI Scholarship Fund","","To provide scholarship funding for students enrolled at the University of Colorado Denver.
-","","","0321935","","1","0","CU Denver","Colorado Opportunity Scholarship Initiative","Scholarships & Student Success"
+","","","0321935","","1","0","CU Denver","Colorado Opportunity Scholarship Initiative","Scholarships & Student Success","/fund/university-colorado-denver-cosi-scholarship-fund"
 "University of Colorado Anschutz Shares Fund","","To provide emergency support for students at the University of Colorado Anschutz Medical Campus.
 ","To provide emergency support for students at the University of Colorado Anschutz Medical Campus.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0223119","","1","1","CU Anschutz","Emergency Support","Scholarships & Student Success"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0223119","","1","1","CU Anschutz","Emergency Support","Scholarships & Student Success","/fund/university-colorado-anschutz-shares-fund"
 "Officer Garrett Swasey Scholarship","","UCCS Police Officer Garrett Swasey was tragically killed in the line of duty on November 28, 2015. This fund will permanently fund scholarships in his name and continue his legacy of giving back to UCCS.
 To honor his spirit and contributions to the UCCS community, hundreds of individuals have contributed to the Officer Garrett Swasey Scholarship Fund and surpassed our initial goal of $50,000. This outpouring of support has inspired us to raise our goal to $100,000 and continue to broaden the impact of that legacy. Your generous contributions show that Officer Swasey’s courage will never be forgotten!
 
 
-","","","0423900","","1","0","UCCS","","Scholarships & Student Success"
-"Student Emergency Fund","","To provide support for CU Boulder students who are experiencing a crisis that could adversely affect their academic year.
-","If you are or know of a student looking for support from the Student Emergency Fund, please visit colorado.edu/studentaffairs/student-emergency-fund for more information.
-","","0125072","","1","1","CU Boulder","Campus Programs, Emergency Support","Community & Society"
+","","","0423900","","1","0","UCCS","","Scholarships & Student Success","/fund/officer-garrett-swasey-scholarship"
 "Bruce and Anne Shepard Reach Your Peak Scholarship Fund","","To provide need-based financial aid for students at the University of Colorado Colorado Springs.
 ","Reach Your Peak students have strong potential to succeed and the scholarship helps them make it to graduation.
 Through December 31st, gifts to this fund will be matched dollar for dollar by a generous donor.
-","","0421265","","1","1","UCCS","Office of Financial Aid","Scholarships & Student Success"
-"UCCS Fund for Excellence","","To provide flexible support to address the campus's most promising priorities in support of enhancing student success and UCCS's prominence as an institution of higher education.
-","An investment in UCCS is an investment in the southern Colorado community, the state and beyond.
-","","0421003","","1","1","UCCS","Emergency Support","Scholarships & Student Success"
+","","0421265","","1","1","UCCS","Office of Financial Aid","Scholarships & Student Success","/fund/bruce-and-anne-shepard-reach-your-peak-scholarship-fund"
+"Student Emergency Fund","","To provide support for CU Boulder students who are experiencing a crisis that could adversely affect their academic year.
+","If you are or know of a student looking for support from the Student Emergency Fund, please visit colorado.edu/studentaffairs/student-emergency-fund for more information.
+","","0125072","","1","1","CU Boulder","Campus Programs, Emergency Support","Community & Society","/fund/student-emergency-fund"
 "University of Colorado Alzheimer’s and Cognition Center Fund","","To support the University of Colorado Alzheimer’s and Cognition Center at the University of Colorado Anschutz Medical Campus.
 ","To support the Rocky Mountain Alzheimer’s Disease Center at the Anschutz Medical Campus.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0222578","","1","1","CU Anschutz","School of Medicine, Neurology","Science, Research & Innovation"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0222578","","1","1","CU Anschutz","School of Medicine, Neurology","Science, Research & Innovation","/fund/university-colorado-alzheimer%E2%80%99s-and-cognition-center-fund"
 "Loving Lynx Emergency Fund","","To support students who encounter unexpected hardships and financial emergencies while pursuing degrees at CU Denver, at the discretion of the Dean of Students Office.
 ","To support students who encounter unexpected hardships and financial emergencies while pursuing degrees at CU Denver, at the discretion of the Dean of Students Office.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0321822","","1","1","CU Denver","Emergency Support","Scholarships & Student Success"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0321822","","1","1","CU Denver","Emergency Support","Scholarships & Student Success","/fund/loving-lynx-emergency-fund"
 "Office of Student Life Food Pantry Fund","","To provide non-perishable food to be accessed by qualifying student recipients on the University of Colorado Denver Campus.
 ","To provide non-perishable food to be accessed by qualifying student recipients on CU Denver Campus.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0321793","","1","1","CU Denver","Office of Student Life, Food Pantry","Scholarships & Student Success"
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0321793","","1","1","CU Denver","Office of Student Life, Food Pantry","Scholarships & Student Success","/fund/office-student-life-food-pantry-fund"
 "CU Denver Scholarship Fund","","To support general scholarships at the University of Colorado Denver.
 ","To browse other scholarship options, click here.
 Gifts to the CU Denver Scholarship Fund will be matched to double your impact! 
 As a result of a grant from the Colorado Opportunity Scholarship Initiative (COSI), the first $99,191 in gifts to the CU Denver Scholarship Fund will be matched 1:1.
-","","0321201","","1","1","CU Denver","","Scholarships & Student Success"
-"CU Anschutz Fund for Excellence","","To provide a flexible funding source to address CU Anschutz's most promising priorities in support of research, education and patient care.
-","As the leading academic medical center in the Rocky Mountain region, CU Anschutz measures our success by helping patients live longer, better lives. Every contribution supporting the Fund for Excellence is put to work immediately to advance research, education and patient care.
-Your tax-deductible gift will help us deliver the best care today, while reinventing the care of tomorrow.
-If you’d like to search for more specific funding opportunities, please click here.
-","","0221052","100","1","1","CU Anschutz","","Science, Research & Innovation"
-"Financial Aid Endowment Fund - Need Based","","To provide scholarship support for students with demonstrated financial need at the University of Colorado Boulder.
-","To provide scholarship support for students with demonstrated financial need at the University of Colorado Boulder.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0154061","","1","1","CU Boulder","","Scholarships & Student Success"
-"Medical Student Scholarship Fund","","To provide financial aid to School of Medicine students at the University of Colorado Anschutz Medical Campus.
-","To provide financial aid to School of Medicine students at the University of Colorado Anschutz Medical Campus.
-","Sunday, March 1, 2020 to Monday, March 2, 2020","0222209","","1","1","CU Anschutz","School of Medicine","Scholarships & Student Success"
+","","0321201","","1","1","CU Denver","","Scholarships & Student Success","/fund/cu-denver-scholarship-fund"
+"UCCS Fund for Excellence","","To provide flexible support to address the campus's most promising priorities in support of enhancing student success and UCCS's prominence as an institution of higher education.
+","An investment in UCCS is an investment in the southern Colorado community, the state and beyond.
+","","0421003","","1","1","UCCS","Emergency Support","Scholarships & Student Success","/fund/uccs-fund-excellence"
 "Cancer Research General Fund","","To support cancer research at the University of Colorado Anschutz Medical Campus.
 ","As the leading academic medical center in the Rocky Mountain region, CU Anschutz measures our success by helping patients live longer, better lives. Every contribution supporting the Fund for Excellence is put to work immediately to advance research, education and patient care at the CU Cancer Center.
 Your tax-deductible gift will help us deliver the best care today, while reinventing the care of tomorrow.
 If you’d like to search for more specific funding opportunities, please click here.
-","","0221059","","1","0","CU Anschutz","School of Medicine, Cancer Center, Medicine, Medical Oncology","Science, Research & Innovation"
+","","0221059","","1","0","CU Anschutz","School of Medicine, Cancer Center, Medicine, Medical Oncology","Science, Research & Innovation","/fund/cancer-research-general-fund"
+"CU Anschutz Fund for Excellence","","To provide a flexible funding source to address CU Anschutz's most promising priorities in support of research, education and patient care.
+","As the leading academic medical center in the Rocky Mountain region, CU Anschutz measures our success by helping patients live longer, better lives. Every contribution supporting the Fund for Excellence is put to work immediately to advance research, education and patient care.
+Your tax-deductible gift will help us deliver the best care today, while reinventing the care of tomorrow.
+If you’d like to search for more specific funding opportunities, please click here.
+","","0221052","100","1","1","CU Anschutz","","Science, Research & Innovation","/fund/cu-anschutz-fund-excellence"
+"Financial Aid Endowment Fund - Need Based","","To provide scholarship support for students with demonstrated financial need at the University of Colorado Boulder.
+","To provide scholarship support for students with demonstrated financial need at the University of Colorado Boulder.
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0154061","","1","1","CU Boulder","","Scholarships & Student Success","/fund/financial-aid-endowment-fund-need-based"
+"Medical Student Scholarship Fund","","To provide financial aid to School of Medicine students at the University of Colorado Anschutz Medical Campus.
+","To provide financial aid to School of Medicine students at the University of Colorado Anschutz Medical Campus.
+","Sunday, March 1, 2020 to Monday, March 2, 2020","0222209","","1","1","CU Anschutz","School of Medicine","Scholarships & Student Success","/fund/medical-student-scholarship-fund"
 "Daniel L. Touff Memorial Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide scholarships to juniors and seniors enrolled in the Department of Chemistry at CU Boulder in memory of Daniel L. Touff.
-","","Friday, April 23, 2021","0151212","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Friday, April 23, 2021","0151212","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/daniel-l-touff-memorial-scholarship-fund"
 "Seniors Creating Future Buffs Scholarship Endowment Fund","Jenna.Hurley@cu.edu","To provide need and merit-based scholarship support at the University of Colorado Boulder.
-","","Friday, April 23, 2021","0131077","","0","1","CU Boulder","",""
+","","Friday, April 23, 2021","0131077","","0","1","CU Boulder","","","/fund/seniors-creating-future-buffs-scholarship-endowment-fund-0"
 "Bob and Pat Meyers Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide scholarship support to the Department of Chemistry and Biochemistry at the University of Colorado Boulder.
-","","Thursday, April 22, 2021","0123233","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Thursday, April 22, 2021","0123233","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/bob-and-pat-meyers-scholarship-fund"
 "Teresa Fonseca Memorial Fund","Jeanie.Hunter@Colorado.EDU","To provide awards for undergraduate students who are chemistry majors enrolled in the Department of Chemistry at the University of Colorado Boulder. The award minimum will be $1,500.
-","","Thursday, April 22, 2021","0150348","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Thursday, April 22, 2021","0150348","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/teresa-fonseca-memorial-fund"
 "CU Hyperloop Support Fund","Shayla.DeYoung@colorado.edu","To provide support for the CU Hyperloop student group and their transportation and tunneling technology research in the College of Engineering and Applied Science at the University of Colorado Boulder.
-","","Wednesday, April 21, 2021","0121712","","0","1","CU Boulder","College of Engineering and Applied Science","Science, Research & Innovation"
+","","Wednesday, April 21, 2021","0121712","","0","1","CU Boulder","College of Engineering and Applied Science","Science, Research & Innovation","/fund/cu-hyperloop-support-fund"
 "Dr. Norman B. Marshall Memorial Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for the University of Colorado Anschutz Medical Campus in memory of Dr. Norman B. Marshall.
-","","Wednesday, April 21, 2021","0221566","","0","1","","",""
+","","Wednesday, April 21, 2021","0221566","","0","1","","","","/fund/dr-norman-b-marshall-memorial-fund"
 "Building Equity in Our Community of Academics (BECA) Fund","Jeanie.Hunter@Colorado.EDU","To provide support to underrepresented students majoring in Psychology and Neuroscience, who have completed or are completing their honor's thesis in the Department of Psychology and Neuroscience at the University of Colorado Boulder.
-","","Wednesday, April 21, 2021","0121746","","0","1","CU Boulder","College of Arts and Sciences, Psychology and Neuroscience",""
+","","Wednesday, April 21, 2021","0121746","","0","1","CU Boulder","College of Arts and Sciences, Psychology and Neuroscience","","/fund/building-equity-our-community-academics-beca-fund"
 "Endowed Fund for Innovation and Excellence in Jewish Studies","Christine.HerreraODell@Colorado.EDU","To provide support for the sustainability of the Program in Jewish Studies at CU Boulder and the continued elevation of the Program's profile; locally, nationally, and internationally.
-","","Wednesday, April 21, 2021","0151669","","0","1","CU Boulder","College of Arts and Sciences, Jewish Studies","Community & Society"
+","","Wednesday, April 21, 2021","0151669","","0","1","CU Boulder","College of Arts and Sciences, Jewish Studies","Community & Society","/fund/endowed-fund-innovation-and-excellence-jewish-studies"
 "Dr. Rebecca Kantor Memorial Fund","jennifer.dailey@ucdenver.edu","To provide support for the School of Education and Human Development at the University of Colorado Denver in memory of Dean Rebecca Kantor.
-","","Tuesday, April 20, 2021","0321025","","0","1","CU Denver","",""
+","","Tuesday, April 20, 2021","0321025","","0","1","CU Denver","","","/fund/dr-rebecca-kantor-memorial-fund"
 "Marian Peebles Fitchette Scholarship","Jeanie.Hunter@Colorado.EDU","To provide scholarship support for the Department of Chemistry and Biochemistry at the University of Colorado Boulder.
-","","Tuesday, April 20, 2021","0150823","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150823","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/marian-peebles-fitchette-scholarship"
 "Joseph Addison Sewall Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide scholarships to needy and outstanding students enrolled in the Chemistry and Biochemistry Department at UCB in honor of Joseph Addison Sewall.
-","","Tuesday, April 20, 2021","0158041","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0158041","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/joseph-addison-sewall-scholarship-fund"
 "Patty Feist Teaching Assistant Award","Jeanie.Hunter@Colorado.EDU","To provide support for an award to be given to a teaching assistant in the organic chemistry lab at CU Boulder who has shown dedication to teaching.
-","","Tuesday, April 20, 2021","0123463","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0123463","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/patty-feist-teaching-assistant-award"
 "Lorraine and Masui Toji Chemistry Fund","Jeanie.Hunter@Colorado.EDU","To provide summer research stipends for undergraduates and/or fund shared research instrumentation, subject to the discretion of the Chemistry Department's committee on undergraduate research at CU Boulder.
 ","To provide summer research stipends for undergraduates and/or fund shared research instrumentation, subject to the discretion of the Chemistry Department's committee on undergraduate research at CU Boulder.
-","Tuesday, April 20, 2021","0154540","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","Tuesday, April 20, 2021","0154540","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/lorraine-and-masui-toji-chemistry-fund"
 "John S. Meek Graduate Teaching Award in Organic Chemistry","Jeanie.Hunter@Colorado.EDU","To provide graduate teaching awards in Organic Chemistry at the University of Colorado Boulder.
-","","Tuesday, April 20, 2021","0150309","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150309","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/john-s-meek-graduate-teaching-award-organic-chemistry"
 "Johnson Beth-El Diversity Scholarship Fund","ddickers@uccs.edu","To provide support for scholarship awards for underrepresented students in the Helen and Arthur E. Johnson Beth-El College of Nursing and Health Sciences at UCCS. If 25,000 is reached, the fund will convert to an endowment.
-","","Tuesday, April 20, 2021","0421044","","0","1","UCCS","Helen and Arthur E. Johnson Beth-El College of Nursing and Health Sciences","Scholarships & Student Success"
+","","Tuesday, April 20, 2021","0421044","","0","1","UCCS","Helen and Arthur E. Johnson Beth-El College of Nursing and Health Sciences","Scholarships & Student Success","/fund/johnson-beth-el-diversity-scholarship-fund"
 "Harold Walton Endowed Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide support for scholarships in the Department of Chemistry at the University of Colorado Boulder.
-","","Tuesday, April 20, 2021","0150759","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150759","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/harold-walton-endowed-scholarship-fund"
 "Eugene H. Huffman Memorial Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide funding for a laboratory in the Department of Chemistry at the University of Colorado Boulder in memory of Eugene H. Huffman.
-","","Tuesday, April 20, 2021","0150069","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150069","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/eugene-h-huffman-memorial-scholarship-fund"
 "Marion L. Sharrah Graduate Fellowship Fund","Jeanie.Hunter@Colorado.EDU","To provide a graduate fellowship annually in the Department of Chemistry at the University of Colorado Boulder.
-","","Tuesday, April 20, 2021","0150219","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150219","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/marion-l-sharrah-graduate-fellowship-fund"
 "John B. Ekeley Graduate Fellowship Fund","Jeanie.Hunter@Colorado.EDU","To provide a graduate fellowship in Chemistry at the University of Colorado Boulder, in memory of John B. Ekeley.
-","","Tuesday, April 20, 2021","0150322","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0150322","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/john-b-ekeley-graduate-fellowship-fund"
 "Thomas Lee Weatherly M.D. Fund","Jeanie.Hunter@Colorado.EDU","To provide support for the Department of Chemistry at the University of Colorado Boulder.
-","","Tuesday, April 20, 2021","0159046","","0","1","CU Boulder","College of Arts and Sciences, Chemistry",""
+","","Tuesday, April 20, 2021","0159046","","0","1","CU Boulder","College of Arts and Sciences, Chemistry","","/fund/thomas-lee-weatherly-md-fund"
 "Ron Wisner Endowed Human Spirit and Leadership Award Fund","ddickers@uccs.edu","To provide annual awards to undergraduate students who are attending UCCS and demonstrate outstanding leadership skills and exemplify the vision, integrity and leadership ideals of Ron Wisner.
-","","Tuesday, April 20, 2021","0450092","","0","1","UCCS","Office of Financial Aid","Scholarships & Student Success"
+","","Tuesday, April 20, 2021","0450092","","0","1","UCCS","Office of Financial Aid","Scholarships & Student Success","/fund/ron-wisner-endowed-human-spirit-and-leadership-award-fund"
 "Susan Sue Hartley Memorial Fund for Cancer Research","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for cancer research at the University of Colorado Anschutz Medical Campus in memory of Sue Hartley.
-","","Friday, April 16, 2021","0221559","","0","1","CU Anschutz","",""
+","","Friday, April 16, 2021","0221559","","0","1","CU Anschutz","","","/fund/susan-sue-hartley-memorial-fund-cancer-research"
 "Frederic C. Hamilton Macular Degeneration Center Fund","EMILY.SPIRK@CUANSCHUTZ.EDU","To provide support for the Macular Degeneration Center at the University of Colorado Anschutz Medical Campus.
-","","Thursday, April 15, 2021","0222876","","0","1","CU Anschutz","Department of Ophthalmology, Macular Degeneration Center","Science, Research & Innovation"
+","","Thursday, April 15, 2021","0222876","","0","1","CU Anschutz","Department of Ophthalmology, Macular Degeneration Center","Science, Research & Innovation","/fund/frederic-c-hamilton-macular-degeneration-center-fund"
 "Ophthalmology Dry Eye Center Program Support Fund","EMILY.SPIRK@CUANSCHUTZ.EDU","To provide program support for the Department of Ophthalmology Dry Eye Center including diagnostic equipment, medical supplies and travel to improve understanding, care, and education for dry eye syndrome patients.
-","","Thursday, April 15, 2021","0222988","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation"
+","","Thursday, April 15, 2021","0222988","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation","/fund/ophthalmology-dry-eye-center-program-support-fund"
 "Kahook Glaucoma Research Fund","EMILY.SPIRK@CUANSCHUTZ.EDU","To provide support for glaucoma and anterior segment disease research (clinical, basic, or translational) currently directed by Dr. Kahook through work done within the Department of Ophthalmology at the University of Colorado Anschutz Medical Campus.
-","","Thursday, April 15, 2021","0223394","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation"
+","","Thursday, April 15, 2021","0223394","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation","/fund/kahook-glaucoma-research-fund"
 "Sue Anschutz-Rodgers Eye Center Endowed Fund","EMILY.SPIRK@CUANSCHUTZ.EDU","To support the research goals of the Sue Anschutz-Rodgers Eye Center at the direction of the Chair of the Department of Ophthalmology.
-","","Thursday, April 15, 2021","0250363","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation"
+","","Thursday, April 15, 2021","0250363","","0","1","CU Anschutz","Department of Ophthalmology","Science, Research & Innovation","/fund/sue-anschutz-rodgers-eye-center-endowed-fund"
 "Laura Dus & Sam Schiro Breast Cancer Research Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for breast cancer research, currently under the direction of Dr. Jennifer Diamond, at the University of Colorado Cancer within the School of Medicine at the University of Anschutz Medical Campus, in memory of Margaret Amini.
-","","Thursday, April 15, 2021","0221556","","0","1","CU Anschutz","School of Medicine, Cancer Center",""
+","","Thursday, April 15, 2021","0221556","","0","1","CU Anschutz","School of Medicine, Cancer Center","","/fund/laura-dus-sam-schiro-breast-cancer-research-fund"
 "Global Intercultural Research Center (GLINT) Fund","jhusman@uccs.edu","To provide programmatic and operational support for Global Intercultural Research Center (GLINT) research and programming including the GLINT Seed Grant competition for faculty and students to engage in global and/or intercultural research.
-","","Wednesday, April 14, 2021","0421039","","0","1","UCCS","Chancellor's Office","Science, Research & Innovation"
+","","Wednesday, April 14, 2021","0421039","","0","1","UCCS","Chancellor's Office","Science, Research & Innovation","/fund/global-intercultural-research-center-glint-fund"
 "Brandon Campbell Memorial Endowment for Grief and Bereavement Support","EMILY.SPIRK@CUANSCHUTZ.EDU","To provide support for the Division of Internal Medicine in the Department of Medicine in the School of Medicine at the University of Colorado Anschutz Medical Campus.
-","","Wednesday, April 14, 2021","0250461","","0","1","CU Anschutz","General Internal Medicine","Health & Wellness"
+","","Wednesday, April 14, 2021","0250461","","0","1","CU Anschutz","General Internal Medicine","Health & Wellness","/fund/brandon-campbell-memorial-endowment-grief-and-bereavement-support"
 "Pay It Forward Pharmacy Alumni Scholarship Fund","KAILYN.GRAMLY@CUANSCHUTZ.EDU","To provide support for one-year scholarship awards, including research-related expenses, for fourth-year students enrolled in the Skaggs School of Pharmacy and Pharmaceutical Sciences at Anschutz. If $25,000 is reached, fund will convert to an endowment.
-","","Tuesday, April 13, 2021","0221555","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success"
+","","Tuesday, April 13, 2021","0221555","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success","/fund/pay-it-forward-pharmacy-alumni-scholarship-fund"
 "Barbara Davis Center Basic Research Fund","TAYLOR.STIMPSON@CUANSCHUTZ.EDU","To provide research support for human autoimmune type 1 diabetes currently under the direction of Dr. Holger Russ at the Barbara Davis Center for Diabetes at the University of Colorado Anschutz Medical Campus.
-","","Monday, April 12, 2021","0221484","","0","1","CU Anschutz","Barbara Davis Center","Science, Research & Innovation"
+","","Monday, April 12, 2021","0221484","","0","1","CU Anschutz","Barbara Davis Center","Science, Research & Innovation","/fund/barbara-davis-center-basic-research-fund"
 "Florence G. Strauss Indigenous Medicine Collection Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for the Florence G. Strauss Indigenous medicine collection at the University of Colorado Anschutz Medical Campus library.
-","","Friday, April 9, 2021","0221537","","0","1","CU Anschutz","",""
+","","Friday, April 9, 2021","0221537","","0","1","CU Anschutz","","","/fund/florence-g-strauss-indigenous-medicine-collection-fund"
 "Florence G. Strauss Integrative Medicine Endowed Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for the Strauss-Wisneski Indigenous and Integrative Medicine Collection as well as funding for a faculty position at the Health Sciences Library at the University of Colorado Anschutz Medical Campus.
-","","Friday, April 9, 2021","0230075","","0","0","CU Anschutz","",""
+","","Friday, April 9, 2021","0230075","","0","0","CU Anschutz","","","/fund/florence-g-strauss-integrative-medicine-endowed-fund"
 "Teri Leiker Memorial Marching Band Scholarship","caitlin.stokes@colorado.edu","To provide support for scholarships for students in the marching band at the University of Colorado Boulder.
-","","Monday, April 5, 2021","0121638","","0","1","CU Boulder","Golden Buffalo Marching Band, College of Music","Arts & Culture"
+","","Monday, April 5, 2021","0121638","","0","1","CU Boulder","Golden Buffalo Marching Band, College of Music","Arts & Culture","/fund/teri-leiker-memorial-marching-band-scholarship"
 "Don Ringsby Memorial Fund","","To provide support for the Helen and Arthur E. Johnson Depression Center at the University of Colorado Anschutz Medical Campus.
-","","Friday, April 2, 2021","0221530","","0","1","CU Anschutz","",""
+","","Friday, April 2, 2021","0221530","","0","1","CU Anschutz","","","/fund/don-ringsby-memorial-fund"
 "Aquetza Academic Summer Program Fund","Grace.Maniscalco@Colorado.EDU","To provide support for the Aquetza Academic Summer Program in the School of Education at the University of Colorado Boulder.
-","","Thursday, April 1, 2021","0121543","","0","1","CU Boulder","School of Education","Scholarships & Student Success"
+","","Thursday, April 1, 2021","0121543","","0","1","CU Boulder","School of Education","Scholarships & Student Success","/fund/aquetza-academic-summer-program-fund"
 "Geoff Goral Memorial Scholarship Fund","Shayla.DeYoung@colorado.edu","To provide scholarship support for a junior or senior student in the lighting program in Architectural Engineering Program the Department of Civil, Environmental and Architectural Engineering at CU Boulder in memory of Geoff Goral.
-","","Monday, March 29, 2021","0121544","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Monday, March 29, 2021","0121544","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/geoff-goral-memorial-scholarship-fund"
 "CEAS Back a Buff Income Share Agreement Support Fund","Shayla.DeYoung@colorado.edu","To provide support for need-based junior and senior students in the College of Engineering and Applied Science (CEAS) at the University of Colorado Boulder via income share agreements.
-","","Thursday, March 25, 2021","0121536","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Thursday, March 25, 2021","0121536","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/ceas-back-buff-income-share-agreement-support-fund"
 "Patrick Browne Memorial Fund","JENNIFER.DAILEY@UCDENVER.EDU","To provide scholarship support for veteran and military connected students at the University of Colorado Denver and at the University of Colorado Anshcutz Medical Campus.
 ","Gifts made to this fund will help establish a scholarship in memory of Patrick Browne, CU Denver alumnus and Director of Veteran and Military Student Services.
-","","0321008","","0","1","CU Denver","Veteran and Military Connected Student Services","Scholarships & Student Success"
+","","0321008","","0","1","CU Denver","Veteran and Military Connected Student Services","Scholarships & Student Success","/fund/patrick-browne-memorial-fund"
 "Gilbert White Graduate Research Fellowship Fund","Christine.HerreraODell@Colorado.EDU","To provide fellowship support in the form of stipend and/or tuition for graduate students pursuing a Ph.D. in one of the disciplines represented within the Institute of Behavioral Science.
 ","Named after the Natural Hazards Center's founder and long-time mentor, the Gilbert F. White Graduate Research Fellowship in Natural Hazards Mitigation will honor White by reflecting his life-long dedication to furthering knowledge and research regarding ways to alleviate the human suffering caused by natural hazards. The fund will ensure that hazards mitigation remains a central concern of academic scholarship. The fellowship will be open to any scholar in a relevant social science discipline and will reside at the Natural Hazards Center.
-","","0150669","","0","1","CU Boulder","Institute of Behavioral Science, Graduate School, Natural Hazards Center","Scholarships & Student Success"
+","","0150669","","0","1","CU Boulder","Institute of Behavioral Science, Graduate School, Natural Hazards Center","Scholarships & Student Success","/fund/gilbert-white-graduate-research-fellowship-fund"
 "Natural Hazards Center Disability and Disasters Award Fund","Christine.HerreraODell@Colorado.EDU","To provide support for awards for students or professionals studying or working in the field of disaster management at the University of Colorado Boulder.
-","","Wednesday, March 17, 2021","0126087","","0","1","CU Boulder","Institute of Behavioral Science, Natural Hazards Center","Scholarships & Student Success"
+","","Wednesday, March 17, 2021","0126087","","0","1","CU Boulder","Institute of Behavioral Science, Natural Hazards Center","Scholarships & Student Success","/fund/natural-hazards-center-disability-and-disasters-award-fund"
 "CU Art Museum Endowed Student Program Fund","Christine.HerreraODell@Colorado.EDU","To provide programmatic support for the CU Art Museum at the University of Colorado Boulder to ensure student employees have opportunities for professional growth including trainings, and skill building to engage in a broad range of museum work.
-","","Wednesday, March 17, 2021","0151690","","0","1","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture"
+","","Wednesday, March 17, 2021","0151690","","0","1","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture","/fund/cu-art-museum-endowed-student-program-fund"
 "Pediatric and Adolescent Gynecology Support Fund","KAILYN.GRAMLY@CUANSCHUTZ.EDU","To provide support for research and clinical applications as directed by the pediatric and adolescent gynecology team at the University Anschutz Medical Campus
-","","Thursday, March 11, 2021","0221352","","0","1","CU Anschutz","School of Medicine, Obstetrics and Gynecology","Science, Research & Innovation"
+","","Thursday, March 11, 2021","0221352","","0","1","CU Anschutz","School of Medicine, Obstetrics and Gynecology","Science, Research & Innovation","/fund/pediatric-and-adolescent-gynecology-support-fund"
 "Lisa Shearrer Memorial Fund","MONICA.CUTLER@UCDENVER.EDU","To provide support for the University of Colorado Denver in memory of Lisa Shearrer.
 ","Lisa Shearrer passed away February 26, 2021, at the age of 54, after a two-year battle with cancer. A deputy in the Denver Sherriff’s Department, Lisa was inspired to help the women she served, many of whom she in turn inspired with her kindness and compassion. She asked that her family establish a scholarship at the University of Colorado Denver, from which her son Connor graduated, to benefit women like those she met in her work, women whose means were few but whose talent she hoped could be recognized and rewarded with higher education. 
 
  
-","","0321006","","0","1","CU Denver","",""
+","","0321006","","0","1","CU Denver","","","/fund/lisa-shearrer-memorial-fund"
 "IBS Diversity, Equity and Inclusion Support Fund","Eric.Horner@Colorado.EDU","To provide discretionary support for equity, diversity & inclusion programming in IBS to enhance recruitment, mentoring & training of next generation researchers with diverse backgrounds. If $25,000 is reached, fund will convert to a quasi endowment.
-","","Thursday, March 11, 2021","0121524","","0","1","CU Boulder","Institute of Behavioral Science","Science, Research & Innovation"
+","","Thursday, March 11, 2021","0121524","","0","1","CU Boulder","Institute of Behavioral Science","Science, Research & Innovation","/fund/ibs-diversity-equity-and-inclusion-support-fund"
 " College of Nursing Staff and Faculty Caring Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support to honor and recognize employees in the College of Nursing at the University of Colorado Anschutz, including flowers, a gifts, or a similar acknowledgement to faculty and staff members who experience a significant life event
-","","Wednesday, March 10, 2021","0221383","","0","1","CU Anschutz","College of Nursing",""
+","","Wednesday, March 10, 2021","0221383","","0","1","CU Anschutz","College of Nursing","","/fund/college-nursing-staff-and-faculty-caring-fund"
 "CU Art Museum Endowed Diversity Acquisition Fund","Christine.HerreraODell@Colorado.EDU","To support the acquisition of artworks by historically underrepresented artists at UCB. Underrepresented artists may include artists of color, artists with disabilities and LGBTQ+ artists.
-","","Tuesday, March 9, 2021","0151689","","0","1","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture"
+","","Tuesday, March 9, 2021","0151689","","0","1","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture","/fund/cu-art-museum-endowed-diversity-acquisition-fund"
 "Ziemer Family Engineering Endowed Scholarship Fund","jhusman@uccs.edu","To provide scholarship awards for students enrolled in the College of Engineering and Applied Science at UCCS. First preference given to students majoring in electrical engineering.
-","","Monday, March 8, 2021","0450132","","0","1","UCCS","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Monday, March 8, 2021","0450132","","0","1","UCCS","College of Engineering and Applied Science","Scholarships & Student Success","/fund/ziemer-family-engineering-endowed-scholarship-fund"
 "Warrick Endowment for Leadership, Teaching, and Culture","jhusman@uccs.edu","To provide support for a professorship in the Management Department in the College of Business at UCCS in honor of Dr. Warrick. The goal for this fund is to reach endowment level and support a professorship within five years after establishment.
-","","Monday, March 8, 2021","0421026","","0","1","UCCS","College of Business",""
+","","Monday, March 8, 2021","0421026","","0","1","UCCS","College of Business","","/fund/warrick-endowment-leadership-teaching-and-culture"
 "Sam Sorkin Memorial Fund","Jill.White@colorado.edu","To provide support for mental health initiatives for students enrolled in the Law School at the University of Colorado Boulder in memory of Sam Sorkin.
-","","Wednesday, March 3, 2021","0121414","","0","1","CU Boulder","School of Law","Health & Wellness"
+","","Wednesday, March 3, 2021","0121414","","0","1","CU Boulder","School of Law","Health & Wellness","/fund/sam-sorkin-memorial-fund-0"
 "Changing the Face of Real Estate Scholarship Fund","Beverly.Coody@Colorado.EDU","To provide undergraduate scholarship awards for students studying real estate in the Leeds School of Business at the University of Colorado Boulder, and entering their junior year and participate in the Diverse Scholars Program.
-","","Wednesday, March 3, 2021","0121525","","0","1","CU Boulder","Leeds School of Business","Scholarships & Student Success"
+","","Wednesday, March 3, 2021","0121525","","0","1","CU Boulder","Leeds School of Business","Scholarships & Student Success","/fund/changing-face-real-estate-scholarship-fund"
 "Diana Kennedy Memorial Fund for Alzheimer's Research","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for Alzheimer's research at the Alzheimer's and Cognition Center in the Department of Neurology at the University of Colorado Anschutz Medical Campus.
-","","Tuesday, March 2, 2021","0221346","","0","1","CU Anschutz","",""
+","","Tuesday, March 2, 2021","0221346","","0","1","CU Anschutz","","","/fund/diana-kennedy-memorial-fund-alzheimers-research"
 "Todd Arcomano, MD Memorial Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for the University of Colorado Anschutz Medical Campus in memory of Dr. Todd Arcomano.
-","","Monday, March 1, 2021","0221336","","0","1","CU Anschutz","",""
+","","Monday, March 1, 2021","0221336","","0","1","CU Anschutz","","","/fund/todd-arcomano-md-memorial-fund"
 "Brockway-Ferguson Endowed Pre-Health Student Support Fund","MONICA.CUTLER@UCDENVER.EDU","To provide undergraduate scholarship support for students enrolled in pre-health programs in the College of Liberal Arts and Sciences at the University of Colorado Denver.
-","","Thursday, February 25, 2021","0350059","","0","1","CU Denver","College of Engineering, Design and Computing","Scholarships & Student Success"
+","","Thursday, February 25, 2021","0350059","","0","1","CU Denver","College of Engineering, Design and Computing","Scholarships & Student Success","/fund/brockway-ferguson-endowed-pre-health-student-support-fund"
 "Garrison Roots Graduate Scholarship Fund in Sculpture","Christine.HerreraODell@Colorado.EDU","To provide graduate scholarships for students enrolled in the College of Arts and Sciences at the University of Colorado Boulder and majoring in sculpture studies in the Department of Art and Art History.
-","","Thursday, February 25, 2021","0125986","","0","1","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success"
+","","Thursday, February 25, 2021","0125986","","0","1","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success","/fund/garrison-roots-graduate-scholarship-fund-sculpture"
 "CU Art Museum Diversity Acquisition Fund","Christine.HerreraODell@Colorado.EDU","To support the acquisition of artworks by historically underrepresented artists at UCB. Underrepresented artists may include artists of color, artists with disabilities and LGBTQ+ artists. If $25,000 is reached, the fund will convert to an endowment.
-","","Monday, February 22, 2021","0121470","","0","0","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture"
+","","Monday, February 22, 2021","0121470","","0","0","CU Boulder","College of Arts and Sciences, CU Art Museum","Arts & Culture","/fund/cu-art-museum-diversity-acquisition-fund"
 "Konrad Steffen Climate Legacy Fund","Eric.Horner@Colorado.EDU","To provide general operating support for the Cooperative Institute for Research in Environmental Sciences (CIRES) at the University of Colorado Boulder. If $50,000 is reached, the fund will convert to a quasi-endowment.
 ","Professor Steffen was Director of the Swiss Federal Institute for Forest, Snow and Landscape Research (WSL) and a former director of the Cooperative Institute for Research in Environmental Sciences at the University of Colorado at Boulder (2005-2012). Steffen, a professor of Geography at CU Boulder from 1990 to 2012, devoted his career to research on the Arctic and Antarctic, and how these critical components of the climate system have responded and influence climate change. His scientific work, fueled by intense curiosity and care, inspired an amazing range of important work by others. This fund will propel the next generation of research at CIRES.
-","","0121176","","0","1","CU Boulder","Cooperative Institute for Research in Environmental Sciences (CIRES)","Science, Research & Innovation"
+","","0121176","","0","1","CU Boulder","Cooperative Institute for Research in Environmental Sciences (CIRES)","Science, Research & Innovation","/fund/konrad-steffen-climate-legacy-fund"
 "CUltivate Undergraduate String Scholarship Fund","Caitlin.Stokes@Colorado.EDU","To provide undergraduate scholarship awards for students enrolled in the Strings Department in the College of Music at the University of Colorado Boulder.
-","","Tuesday, February 16, 2021","0121346","","0","1","CU Boulder","College of Music, Strings","Arts & Culture"
+","","Tuesday, February 16, 2021","0121346","","0","1","CU Boulder","College of Music, Strings","Arts & Culture","/fund/cultivate-undergraduate-string-scholarship-fund"
 "Lambda Liberation Endowed Scholarship Fund","lisa.parks@Colorado.EDU","To provide scholarship awards for students enrolled in the Law School at the University of Colorado Boulder who actively support the LGBTQ community and who seek to make Colorado Law a more welcoming and inclusive environment.
-","","Wednesday, February 10, 2021","0151683","","0","1","CU Boulder","School of Law","Scholarships & Student Success"
+","","Wednesday, February 10, 2021","0151683","","0","1","CU Boulder","School of Law","Scholarships & Student Success","/fund/lambda-liberation-endowed-scholarship-fund"
 "First Generation and Multi-Cultural Business Program Fund","MONICA.CUTLER@UCDENVER.EDU","To provide discretionary support for a first-generation and multi-cultural business program in the Business School at CU Denver. If $250,000 is reached, the fund will convert to an endowment.
-","","Friday, February 5, 2021","0321005","","0","1","CU Denver","Business School","Scholarships & Student Success"
+","","Friday, February 5, 2021","0321005","","0","1","CU Denver","Business School","Scholarships & Student Success","/fund/first-generation-and-multi-cultural-business-program-fund"
 "The Mathematics Academic Resource Center Fund","Jeanie.Hunter@Colorado.EDU","To provide discretionary support to the Mathematics Academic Resource Center in the Department of Mathematics at the University of Colorado Boulder, at the discretion of the department chair.
-","","Friday, February 5, 2021","0121316","","0","1","CU Boulder","College of Arts and Sciences, Mathematics",""
+","","Friday, February 5, 2021","0121316","","0","1","CU Boulder","College of Arts and Sciences, Mathematics","","/fund/mathematics-academic-resource-center-fund"
 "CU LEAD Student Diversity Support Fund","mignon.macias@colorado.edu","To provide support for students participating in the CU LEAD Alliance academic neighborhoods and provide them with financial support to cover tuition, fees and other related costs necessary to ensure the attainment of their academic pursuits at UCB.
-","","","0122990","","0","1","CU Boulder","Office of Diversity, Equity, and Community Engagement, CU-LEAD","Scholarships & Student Success"
+","","","0122990","","0","1","CU Boulder","Office of Diversity, Equity, and Community Engagement, CU-LEAD","Scholarships & Student Success","/fund/cu-lead-student-diversity-support-fund"
 "CU Boulder Trailblazer Student Support Fund","mignon.macias@colorado.edu","To provide scholarship support to students who are ASSET eligible or otherwise ineligible for Federal and State financial aid enrolled at CU Boulder. Preference given to students from households in which English is not the primary language.
-","","Thursday, February 4, 2021","0125211","","0","1","CU Boulder","Office of Diversity, Equity, and Community Engagement","Scholarships & Student Success"
+","","Thursday, February 4, 2021","0125211","","0","1","CU Boulder","Office of Diversity, Equity, and Community Engagement","Scholarships & Student Success","/fund/cu-boulder-trailblazer-student-support-fund"
 "J. Daniel Couger Memorial Scholarship Fund","jhusman@uccs.edu","To provide undergraduate scholarship awards for students enrolled at the University of Colorado Colorado Springs and majoring in Information Systems in the College of Business and/or Computer Security in the College of Engineering and Applied Science.
-","","Wednesday, January 27, 2021","0421632","","0","1","UCCS","College of Business, College of Engineering and Applied Science","Scholarships & Student Success"
+","","Wednesday, January 27, 2021","0421632","","0","1","UCCS","College of Business, College of Engineering and Applied Science","Scholarships & Student Success","/fund/j-daniel-couger-memorial-scholarship-fund"
 "School of Medicine Class of 1973 Scholarship Fund","MARJORIE.OROURKE@CUANSCHUTZ.EDU","To provide scholarship awards for medical students enrolled in the School of Medicine at the University of Colorado Anschutz Medical Campus. Scholarships are merit and need based, will be awarded for one academic year, and are renewable.
-","","Thursday, January 21, 2021","0223379","","0","1","CU Anschutz","School of Medicine","Scholarships & Student Success"
+","","Thursday, January 21, 2021","0223379","","0","1","CU Anschutz","School of Medicine","Scholarships & Student Success","/fund/school-medicine-class-1973-scholarship-fund"
 "Computing Diversity Fund","Shayla.DeYoung@colorado.edu","To provide support to promote diversity programming in the Department of Computer Science at the University of Colorado Boulder, to include student support and student enrichment experiences.
-","","Thursday, January 14, 2021","0121223","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Thursday, January 14, 2021","0121223","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/computing-diversity-fund"
 "Art and Art History Diversity, Equity & Inclusion Endowed Scholarship Fund","Christine.HerreraODell@Colorado.EDU","To provide scholarship awards for students enrolled in the Department of Art and Art History who help diversify the student body and/or instill the principles of inclusiveness in the Department at the University of Colorado Boulder.
-","","Thursday, January 14, 2021","0151677","","0","1","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success"
+","","Thursday, January 14, 2021","0151677","","0","1","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success","/fund/art-and-art-history-diversity-equity-inclusion-endowed-scholarship-fund"
 "University of Colorado Crew Endowment","","To provide support for Club Crew at the University of Colorado Boulder.
 ","By giving to this fund you are helping to provide the best possible experience for present and future Colorado rowers. Each season we budget for equipment, coaching, regatta expenses, and much more. Since we are a primarily student-funded program we appreciate and rely on your donations big and small.
-","","0150958","","0","1","CU Boulder","","Athletics & Recreation"
+","","0150958","","0","1","CU Boulder","","Athletics & Recreation","/fund/university-colorado-crew-endowment"
 "Daniel J. Reed Endowed Memorial Scholarship Fund","Shayla.DeYoung@colorado.edu","To provide undergraduate scholarship awards for students in the College of Engineering and Applied Science at the University of Colorado Boulder.
-","","Thursday, January 7, 2021","0151670","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Thursday, January 7, 2021","0151670","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/daniel-j-reed-endowed-memorial-scholarship-fund"
 "Beverly Brunson Pharmacy Diversity Scholarship Fund","CHRISTIAN.L.MORENO@CUANSCHUTZ.EDU","To provide support for scholarships awards for diverse students enrolled in the Skaggs School of Pharmacy and Pharmaceutical Sciences at the University of Colorado Anschutz Medical Campus, in honor of Beverly Brunson's dedicated service.
-","","Monday, January 4, 2021","0221080","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success"
+","","Monday, January 4, 2021","0221080","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success","/fund/beverly-brunson-pharmacy-diversity-scholarship-fund"
 "Mental Health and Wellness Support Fund","MONICA.CUTLER@UCDENVER.EDU","To provide support for mental health and wellness initiatives at the University of Colorado Denver.
-","","Friday, December 18, 2020","0321003","","0","1","CU Denver","","Health & Wellness"
+","","Friday, December 18, 2020","0321003","","0","1","CU Denver","","Health & Wellness","/fund/mental-health-and-wellness-support-fund"
 "Daniel J. Schler Endowed Fund","MONICA.CUTLER@UCDENVER.EDU","To provide awards for students enrolled in the College of Architecture and Planning at the University of Colorado Denver who are participating in the University Technical Assistance Program (UTAP) or directly related work.
-","","Friday, December 18, 2020","0350166","","0","1","CU Denver","College of Architecture and Planning","Scholarships & Student Success"
+","","Friday, December 18, 2020","0350166","","0","1","CU Denver","College of Architecture and Planning","Scholarships & Student Success","/fund/daniel-j-schler-endowed-fund"
 "Mark L. Laudenslager, PhD Memorial Fund","STACEY.BOEHMER@CUANSCHUTZ.EDU","To provide support for the Department of Psychiatry in the School of Medicine at the University of Colorado Anschutz Medical Campus.
-","","Thursday, December 17, 2020","0221075","","0","1","CU Anschutz","",""
+","","Thursday, December 17, 2020","0221075","","0","1","CU Anschutz","","","/fund/mark-l-laudenslager-phd-memorial-fund"
 "Dr. Peter Kabos Breast Cancer Research Fund","KAILYN.GRAMLY@CUANSCHUTZ.EDU","To provide support for breast cancer research under the direction of Dr. Peter Kabos at the University of Colorado Anschutz Medical Campus.
-","","Tuesday, December 15, 2020","0222776","","0","1","CU Anschutz","School of Medicine, Medicine","Science, Research & Innovation"
+","","Tuesday, December 15, 2020","0222776","","0","1","CU Anschutz","School of Medicine, Medicine","Science, Research & Innovation","/fund/dr-peter-kabos-breast-cancer-research-fund"
 "A Queer Endeavor Kelley Therese Wylder Anderson Scholarship Fund","Grace.Maniscalco@Colorado.EDU","To provide grad and/or undergrad scholarship awards for students enrolled in the School of Education who plan to do research and/or teaching focused on education equity, justice and anti-oppression at UCB. If $25,000 is reached, the fund will be endowed.
 ","Click here to learn more about Kelley Therese Wylder Anderson and this scholarship >
-","","0121130","","0","1","CU Boulder","School of Education","Scholarships & Student Success"
+","","0121130","","0","1","CU Boulder","School of Education","Scholarships & Student Success","/fund/queer-endeavor-kelley-therese-wylder-anderson-scholarship-fund"
 "Onye Ozuzu Scholarship Fund in Dance","Christine.HerreraODell@Colorado.EDU","To provide support for graduate scholarship awards for students in the Master of Fine Arts in Dance program at the University of Colorado Boulder. If $25,000 is reached, the fund will convert to an endowment.
 ","Learn more about Theater and Dance >
-","","0126088","","0","1","CU Boulder","College of Arts and Sciences, Theatre and Dance, Graduate School","Arts & Culture, Scholarships & Student Success"
+","","0126088","","0","1","CU Boulder","College of Arts and Sciences, Theatre and Dance, Graduate School","Arts & Culture, Scholarships & Student Success","/fund/onye-ozuzu-scholarship-fund-dance"
 "John Williamson Endowed Memorial Scholarship Fund","Jeanie.Hunter@Colorado.EDU","To provide undergraduate or graduate scholarship awards for students enrolled in the Department of Applied Mathematics in the College of Arts and Sciences at the University of Colorado Boulder.
 ","Distributions from this fund will be used to provide undergraduate or graduate scholarship awards for students enrolled in the Department of Applied Mathematics. Scholarship recipients will be selected in accordance with established procedures for awarding scholarships. Scholarships will be awarded for one academic year and are renewable based on criteria established by the University. Students who are eligible to receive services from the University’s Disability Services are encouraged to apply.
-","","0151310","","0","1","CU Boulder","College of Arts and Sciences, Applied Mathematics",""
+","","0151310","","0","1","CU Boulder","College of Arts and Sciences, Applied Mathematics","","/fund/john-williamson-endowed-memorial-scholarship-fund"
 "Grant Kinn Memorial Scholarship Fund","CHRISTIAN.L.MORENO@CUANSCHUTZ.EDU","To provide scholarship awards for students enrolled in the Skaggs School of Pharmacy and Pharmaceutical Sciences at the University of Colorado Anschutz Medical Campus.
-","","Tuesday, December 8, 2020","0221055","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success"
+","","Tuesday, December 8, 2020","0221055","","0","1","CU Anschutz","Skaggs School of Pharmacy and Pharmaceutical Sciences","Scholarships & Student Success","/fund/grant-kinn-memorial-scholarship-fund"
 "Rubin Rabinovitz Memorial Scholarship Fund","Christine.HerreraODell@Colorado.EDU","To provide one scholarship of at least $1,000 annually to a student majoring in the Humanities at the University of Colorado Boulder in memory of Rubin Rabinovitz.
-","","Tuesday, December 8, 2020","0150493","","0","1","CU Boulder","College of Arts and Sciences, Humanities","Scholarships & Student Success"
+","","Tuesday, December 8, 2020","0150493","","0","1","CU Boulder","College of Arts and Sciences, Humanities","Scholarships & Student Success","/fund/rubin-rabinovitz-memorial-scholarship-fund"
 "UCCS Honors Program Gray Matters and Complex Systems Fund","jhusman@uccs.edu","To provide support for students enrolled in the University of Colorado Colorado Springs (UCCS) Honors Program and for Honors Program events and programming, as well as the Honors Program's Summer School of Complex Systems.
-","","Tuesday, December 8, 2020","0421015","","0","1","UCCS","Honors Program","Scholarships & Student Success"
+","","Tuesday, December 8, 2020","0421015","","0","1","UCCS","Honors Program","Scholarships & Student Success","/fund/uccs-honors-program-gray-matters-and-complex-systems-fund"
 "Steve Jones CMCI Tribute Fund","Lisa.Munro@Colorado.EDU","To provide support for the College of Media, Communication and Information (CMCI) at UCB in the areas that are important to Professor Steve Jones, at the moment of his retirement, including BuffSports Live and annual discretionary needs.
-","","Friday, December 4, 2020","0121077","","0","1","CU Boulder","College of Media, Communication and Information",""
+","","Friday, December 4, 2020","0121077","","0","1","CU Boulder","College of Media, Communication and Information","","/fund/steve-jones-cmci-tribute-fund"
 "Avielle Initiative Fund","KAILYN.GRAMLY@CUANSCHUTZ.EDU","To provide support for the National Mental Health Innovation Center at the University of Colorado Anschutz Medical Campus. The Fund will provide flexible resources.
 ","These resources include support for Avielle Initiative projects at the National Mental Health Innovation Center that leverage innovative and science-based technology to create resources for researchers, clinicians, organizations and individuals that improve the quality of clinical care, build empathy and empower people to improve their own wellbeing.
 The initiative will also create ways to connect people in order to promote health, prevent illness, and eliminate barriers to access and support.
-","","0221066","","0","1","CU Anschutz","School of Medicine, Neurology, National Mental Health Innovation Center","Science, Research & Innovation"
+","","0221066","","0","1","CU Anschutz","School of Medicine, Neurology, National Mental Health Innovation Center","Science, Research & Innovation","/fund/avielle-initiative-fund"
 "Jeremy Richman Brain Health Research Endowed Fellowship Fund","KAILYN.GRAMLY@CUANSCHUTZ.EDU","To provide fellowship and internship support for students engaged in brain health research within the National Mental Health Innovation Center at the University of Colorado Anschutz Medical Campus.
-","","Friday, December 4, 2020","0250020","","0","1","CU Anschutz","School of Medicine, Neurology, National Mental Health Innovation Center",""
+","","Friday, December 4, 2020","0250020","","0","1","CU Anschutz","School of Medicine, Neurology, National Mental Health Innovation Center","","/fund/jeremy-richman-brain-health-research-endowed-fellowship-fund"
 "Computer Science Endowed Founder's Fund","Shayla.DeYoung@colorado.edu","To provide support for students who enrolled in the Department of Computer Science in the College Engineering and Applied Science at the University of Colorado Boulder.
 ","This Fund is being established in celebration of the Department of Computer Science's 50th anniversary and in honor of founding and early faculty members. 
 Student support may include, but is not limited to, scholarships, professional development and enrichment experiences.
-","","0151664","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","0151664","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/computer-science-endowed-founders-fund"
 "DigitalGlobe Foundation Endowed Scholarship Fund in Memory of Scott Smith","Jeanie.Hunter@Colorado.EDU","To provide undergraduate scholarship awards for junior or senior year students enrolled in the Department of Geography in the College of Arts and Sciences at UCB.
-","","Tuesday, December 1, 2020","0151603","","0","1","CU Boulder","College of Arts and Sciences, Geography","Scholarships & Student Success"
+","","Tuesday, December 1, 2020","0151603","","0","1","CU Boulder","College of Arts and Sciences, Geography","Scholarships & Student Success","/fund/digitalglobe-foundation-endowed-scholarship-fund-memory-scott-smith"
 "Steve Ollanik Endowed Scholarship Fund for Teachers","","To provide scholarship support at the University of Colorado Boulder.  Recipients must be in their student-teaching semester, enrolled in the school, and committed to working in schools with a high percentage of bilingual or multicultural students.
-","","Sunday, November 29, 2020","0151222","","0","1","CU Boulder","School of Education","Scholarships & Student Success"
+","","Sunday, November 29, 2020","0151222","","0","1","CU Boulder","School of Education","Scholarships & Student Success","/fund/steve-ollanik-endowed-scholarship-fund-teachers"
 "Kohn-Damrauer Endowed Chemistry Lectureship Fund","MONICA.CUTLER@UCDENVER.EDU","To provide support for an annual lecture in the department of chemistry at the University of Colorado Denver.
 ","Drs. Lenore and Bob Damrauer established the Kohn-Damrauer Endowed Chemistry Lectureship Fund in 2018 in honor of their parents, Martha and Karl Kohn and Rose and Clarence “Butch” Damrauer.
 Gifts in memory of Lennie Damrauer will support this fund and honor her legacy at CU Denver.
-","","0350165","","0","1","CU Denver","College of Liberal Arts and Sciences","Community & Society"
+","","0350165","","0","1","CU Denver","College of Liberal Arts and Sciences","Community & Society","/fund/kohn-damrauer-endowed-chemistry-lectureship-fund"
 "Damrauer Endowed Lectureship Fund","monica.cutler@ucdenver.edu","To provide support for the creation and continued financial support of the lectures to take place at least annually at University of Colorado Denver.
-","","Tuesday, November 24, 2020","0350122","","0","1","CU Denver","","Community & Society"
+","","Tuesday, November 24, 2020","0350122","","0","1","CU Denver","","Community & Society","/fund/damrauer-endowed-lectureship-fund"
 "Harold F. Walton Seminar Fund","Christine.HerreraODell@Colorado.EDU","To provide a freshman seminar in the Department of Spanish and Portuguese at the University of Colorado Boulder.
 ","The Department of Spanish and Portuguese at the University of Colorado Boulder is a vibrant, multicultural, diverse community of scholars, students, and staff deeply engaged in the study of the languages, cultures, societies, literatures and arts of Latin America, the Iberian Peninsula and the growing US Latinx population.
 When you give to the Department of Spanish and Portuguese, you are helping to expand student learning opportunities, assisting in the training of secondary language teachers, and providing new avenues for faculty research and staff professional development.
-","","0150245","","0","1","CU Boulder","College of Arts and Sciences, Spanish and Portuguese","Scholarships & Student Success"
+","","0150245","","0","1","CU Boulder","College of Arts and Sciences, Spanish and Portuguese","Scholarships & Student Success","/fund/harold-f-walton-seminar-fund"
 "Elizabeth Brower Fund for Special Programs in Spanish and Portugese","Christine.HerreraODell@Colorado.EDU","To support the development of improved methods for the teaching of Spanish and to assist students who upon graduation from UCB will be teaching Spanish.
 ","The Department of Spanish and Portuguese at the University of Colorado Boulder is a vibrant, multicultural, diverse community of scholars, students, and staff deeply engaged in the study of the languages, cultures, societies, literatures and arts of Latin America, the Iberian Peninsula and the growing US Latinx population.
 When you give to the Department of Spanish and Portuguese, you are helping to expand student learning opportunities, assisting in the training of secondary language teachers, and providing new avenues for faculty research and staff professional development.
-","","0159001","","0","1","CU Boulder","College of Arts and Sciences, Spanish and Portuguese","Scholarships & Student Success"
+","","0159001","","0","1","CU Boulder","College of Arts and Sciences, Spanish and Portuguese","Scholarships & Student Success","/fund/elizabeth-brower-fund-special-programs-spanish-and-portugese"
 "College of Business Helping Hand Fund","jhusman@uccs.edu","To provide assistance to students experiencing unexpected hardships and financial emergencies that are impacting their educational success.  Students must be actively pursuing a College of Business education at UCCS.
-","","Thursday, November 19, 2020","0421509","","0","1","UCCS","College of Business","Scholarships & Student Success"
+","","Thursday, November 19, 2020","0421509","","0","1","UCCS","College of Business","Scholarships & Student Success","/fund/college-business-helping-hand-fund"
 "Chicanx/Latinx Library Collections Fund","","To support collection growth, management, preservation, and digitization of archival/other collections focused on Chicanx & Latinx histories and BIPOC or underrepresented communities at UCB. If $25,000 is reached, the fund will convert to an endowment.
-","","Thursday, November 19, 2020","0121008","","0","1","CU Boulder","Libraries","Community & Society"
+","","Thursday, November 19, 2020","0121008","","0","1","CU Boulder","Libraries","Community & Society","/fund/chicanxlatinx-library-collections-fund"
 "BioFrontiers Pandemic Research Fund","","To provide support for pandemic research such as COVID-19, including recruiting and general support for faculty, graduate students and staff, events and research related expenses and activities at the UCB BioFrontiers Institute.
-","","Thursday, November 19, 2020","0126091","","0","1","CU Boulder","BioFrontiers Institute","Science, Research & Innovation"
+","","Thursday, November 19, 2020","0126091","","0","1","CU Boulder","BioFrontiers Institute","Science, Research & Innovation","/fund/biofrontiers-pandemic-research-fund"
 "MOSAIC Capital Fund","ddickers@uccs.edu","To provide support for capital improvements to the physical space used for the Multicultural Office for Student Access, Inclusiveness and Community (MOSAIC) at the University of Colorado Colorado Springs.
-","","Thursday, November 19, 2020","0421013","","0","1","UCCS","Vice Chancellor for Administration and Finance (VCAF)","Community & Society"
+","","Thursday, November 19, 2020","0421013","","0","1","UCCS","Vice Chancellor for Administration and Finance (VCAF)","Community & Society","/fund/mosaic-capital-fund"
 "Dean's Opportunity Fund","MONICA.CUTLER@UCDENVER.EDU","To provide discretionary support for the Dean of the Business School including special projects, research, entertainment and donor cultivation.
-","","Monday, November 16, 2020","0321625","","0","1","CU Denver","Business School",""
+","","Monday, November 16, 2020","0321625","","0","1","CU Denver","Business School","","/fund/deans-opportunity-fund"
 "CU Denver Collegiate Recovery Community Grant Fund","MONICA.CUTLER@UCDENVER.EDU","To provide support for the Collegiate Recovery Community (CRC) to hold recovery meetings, prosocial events, and peer support activities to build a community with people looking to live a better lifestyle and that have a personal connection to recovery.
-","","Monday, November 16, 2020","0322027","","0","1","CU Denver","Collegiate Recovery Community","Community & Society"
+","","Monday, November 16, 2020","0322027","","0","1","CU Denver","Collegiate Recovery Community","Community & Society","/fund/cu-denver-collegiate-recovery-community-grant-fund"
 "EKS&H Plante Moran-Dave Steiner Accounting Faculty Fellowship Endowed Fund","Beverly.Coody@Colorado.EDU","To provide support for outstanding Accounting faculty at the CU Boulder Leeds School of Business.
-","","Monday, November 16, 2020","0154485","","0","1","CU Boulder","Leeds School of Business",""
+","","Monday, November 16, 2020","0154485","","0","1","CU Boulder","Leeds School of Business","","/fund/eksh-plante-moran-dave-steiner-accounting-faculty-fellowship-endowed-fund"
 "Daniel James Reed Memorial Fund","","To provide support for the College of Engineering & Applied Science at the University of Colorado Boulder in memory of Daniel James Reed.
 ","Gifts to this endowed fund support undergraduate scholarship awards for students enrolled in the college.
-","","0126096","","0","0","CU Boulder","College of Engineering and Applied Science",""
+","","0126096","","0","0","CU Boulder","College of Engineering and Applied Science","","/fund/daniel-james-reed-memorial-fund"
 "Art and Art History Diversity, Equity & Inclusion Scholarship Fund","","To provide scholarship awards for students enrolled in the Department of Art and Art History who help diversify the student body and/or instill the principles of inclusiveness in the Department at the University of Colorado Boulder.
-","","Tuesday, November 10, 2020","0126095","","0","0","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success"
+","","Tuesday, November 10, 2020","0126095","","0","0","CU Boulder","College of Arts and Sciences, Art and Art History","Scholarships & Student Success","/fund/art-and-art-history-diversity-equity-inclusion-scholarship-fund"
 "Jacqueline's Wish Fund","TAYLOR.STIMPSON@CUANSCHUTZ.EDU","To provide a financial award, to be known as Jacqueline's Wish for the Heart, to early career investigators doing outstanding research in heart disease that is gender specific to women at the University of Colorado Anschutz Medical Campus.
-","","Thursday, November 5, 2020","0250171","","0","1","CU Anschutz","Center for Women's Health Research","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0250171","","0","1","CU Anschutz","Center for Women's Health Research","Science, Research & Innovation","/fund/jacquelines-wish-fund"
 "Real Estate Center Alumni Scholarship Fund","Beverly.Coody@Colorado.EDU","To provide scholarship awards for students enrolled in the Leeds School of Business who are studying, or have the intention to study, real estate at the University of Colorado Boulder.
 ","Through this scholarship, alumni are encouraging first-generation college students and those from diverse backgrounds to pursue a career in real estate.
-","","0126093","1000","0","1","CU Boulder","CU Real Estate Center, Leeds School of Business",""
+","","0126093","1000","0","1","CU Boulder","CU Real Estate Center, Leeds School of Business","","/fund/real-estate-center-alumni-scholarship-fund"
 "Crisp Museum Herbarium Fund","Christine.HerreraODell@Colorado.EDU","To support the Museum Herbarium at the University of Colorado Boulder in memory of Katherine Crisp.
-","","Thursday, November 5, 2020","0159032","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0159032","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/crisp-museum-herbarium-fund"
 "Collie Public Museum Endowment","Christine.HerreraODell@Colorado.EDU","To provide funds for the unrestricted use of the Museum at CU Boulder in memory of Marie Bard Collie, Joseph Edward Collie, and Charlotte Collie.
-","","Thursday, November 5, 2020","0159031","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0159031","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/collie-public-museum-endowment"
 "Walker Van Riper Scholarship Fund","Christine.HerreraODell@Colorado.EDU","To provide scholarships to students working in the museum who are studying Natural Science or Natural History at the University of Colorado Boulder.
-","","Thursday, November 5, 2020","0159022","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Scholarships & Student Success"
+","","Thursday, November 5, 2020","0159022","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Scholarships & Student Success","/fund/walker-van-riper-scholarship-fund"
 "Barbara and Joe Ben Wheat Museum Fund","Christine.HerreraODell@Colorado.EDU","To provide funding for Museum artifact acquisition and maintenance; faculty support; student support; program development and support; program operations; facility enhancement; and capital construction.
-","","Thursday, November 5, 2020","0154441","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Community & Society"
+","","Thursday, November 5, 2020","0154441","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Community & Society","/fund/barbara-and-joe-ben-wheat-museum-fund"
 "Bray Fossil Egg Fund","Christine.HerreraODell@Colorado.EDU","To provide funds for research and book publication the University of Colorado Boulder Museum.
-","","Thursday, November 5, 2020","0154151","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0154151","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/bray-fossil-egg-fund"
 "Museum Zoology Fund","Christine.HerreraODell@Colorado.EDU","To provide funds for travel, acquisition and care of zoological collections for the Museum at the University of Colorado Boulder.
-","","Thursday, November 5, 2020","0154043","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0154043","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/museum-zoology-fund"
 "Museum Vertebrate Paleontology Fund","Christine.HerreraODell@Colorado.EDU","To support travel and acquisitions/expansion of the geological section of the Museum at the University of Colorado Boulder.
-","","Thursday, November 5, 2020","0154040","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, November 5, 2020","0154040","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/museum-vertebrate-paleontology-fund"
 "William A. Weber Endowed Fund for Children's Education in Natural Sciences","Christine.HerreraODell@Colorado.EDU","To support natural science education programs for children at the University of Colorado Museum of Natural History.
-","","Thursday, November 5, 2020","0151101","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History","Community & Society"
+","","Thursday, November 5, 2020","0151101","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History","Community & Society","/fund/william-weber-endowed-fund-childrens-education-natural-sciences"
 "Frontotemporal and Related Dementias Research Fund","","To provide support for frontotemporal dementia (FTD) and related dementias research in the Department of Neurology at the University of Colorado Anschutz Medical Campus.
-","","Wednesday, November 4, 2020","0223404","","0","1","CU Anschutz","School of Medicine, Neurology","Science, Research & Innovation"
+","","Wednesday, November 4, 2020","0223404","","0","1","CU Anschutz","School of Medicine, Neurology","Science, Research & Innovation","/fund/frontotemporal-and-related-dementias-research-fund"
 "College of Music Diversity, Equity and Inclusion Endowed Fund","caitlin.stokes@colorado.edu","To provide general support for diversity, equity and inclusion programming in the College of Music at the University of Colorado Boulder.
 ","Gifts to this fund provide long-term sustainable support for diversity, equity and inclusion initiatives at the College of Music. Click here to make a gift that is available for immediate use.
-","","0151660","","0","1","CU Boulder","College Music","Arts & Culture"
+","","0151660","","0","1","CU Boulder","College Music","Arts & Culture","/fund/college-music-diversity-equity-and-inclusion-endowed-fund"
 "Endowed Fund for Southwest Anthropological Research at the CU Museum","Christine.HerreraODell@Colorado.EDU","To support anthropological research in the Greater Southwest conducted by the University of Colorado Museum at Boulder.
-","","Thursday, October 29, 2020","0150722","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, October 29, 2020","0150722","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/endowed-fund-southwest-anthropological-research-cu-museum"
 "Joe Ben Wheat Research Endowment","Christine.HerreraODell@Colorado.EDU","To provide research funds for students in Archaeology, and/or Anthropology of the Southwest and Museum Studies in honor of Joe Ben Wheat.
-","","Thursday, October 29, 2020","0150518","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, October 29, 2020","0150518","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/joe-ben-wheat-research-endowment"
 "William H. Burt Museum Fund","Christine.HerreraODell@Colorado.EDU","To provide support to the University of Colorado Museum on the Boulder Campus.
-","","Thursday, October 29, 2020","0150140","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation"
+","","Thursday, October 29, 2020","0150140","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Science, Research & Innovation","/fund/william-h-burt-museum-fund"
 "G. Robert Clark Endowment","","To support participation by Native American students who are members of a federally recognized tribe in the Museum and Field Studies Program at the University of Colorado Boulder.
-","","Tuesday, October 27, 2020","0150056","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Scholarships & Student Success"
+","","Tuesday, October 27, 2020","0150056","","0","1","CU Boulder","Research and Innovation Office, Museum of Natural History, Research Institute","Scholarships & Student Success","/fund/g-robert-clark-endowment"
 "College of Music Diversity, Equity and Inclusion Endowed Fund","","To provide general support for diversity, equity and inclusion programming in the College of Music at the University of Colorado Boulder.
 ","Gifts to this fund provide immediate support for diversity, equity and inclusion initiatives at the College of Music and are not invested as part of the endowment. Click here to make a gift to the endowment.
-","","0131660","","0","1","CU Boulder","College Music","Arts & Culture"
+","","0131660","","0","1","CU Boulder","College Music","Arts & Culture","/fund/college-music-diversity-equity-and-inclusion-fund"
 "Betty J. Schauble Memorial Fund","","To provide support for research in heart failure at the Center for Womens Health Research at the University of Colorado Anschutz Medical Campus, in memory of Betty J. Schauble.
-","","Tuesday, October 27, 2020","0223406","","0","1","CU Anschutz","",""
+","","Tuesday, October 27, 2020","0223406","","0","1","CU Anschutz","","","/fund/betty-j-schauble-memorial-fund"
 "Graduate Support Fund for Diversity and Inclusion in Mechanical Engineering","","To provide support for the creation and ongoing administration of a student group in the Department of Mechanical Engineering at the University of Colorado Boulder who encourage black, indigenous, and people of color (BIPOC) student participation.
-","","Tuesday, October 27, 2020","0126081","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Tuesday, October 27, 2020","0126081","","0","1","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/graduate-support-fund-diversity-and-inclusion-mechanical-engineering"
 "Comprehensive Women's Health Center Fund","","To provide support for the mission of the Comprehensive Women's Health Center through clinical services, research and education at the University of Colorado Anschutz Medical Campus.
-","","Tuesday, October 27, 2020","0222043","","0","1","CU Anschutz","School of Medicine, Obstetrics and Gynecology","Health & Wellness"
+","","Tuesday, October 27, 2020","0222043","","0","1","CU Anschutz","School of Medicine, Obstetrics and Gynecology","Health & Wellness","/fund/comprehensive-womens-health-center-fund"
 "Computer Science Founder's Fund","","To provide support for students who enrolled in the Department of Computer Science in the College Engineering and Applied Science at the UCB. If $25,000 is reached, the fund will convert to an endowment.
-","","Tuesday, October 27, 2020","0126089","","0","0","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success"
+","","Tuesday, October 27, 2020","0126089","","0","0","CU Boulder","College of Engineering and Applied Science","Scholarships & Student Success","/fund/computer-science-founders-fund"
 "CU Real Estate and Technology Initiative Fund","Beverly.Coody@Colorado.EDU","To provide support for activities and positions at the University of Colorado Real Estate Center that promote a focus on technology's impact on the real estate industry.
-","","Monday, October 19, 2020","0125534","","0","1","CU Boulder","CU Real Estate Center, Leeds School of Business",""
+","","Monday, October 19, 2020","0125534","","0","1","CU Boulder","CU Real Estate Center, Leeds School of Business","","/fund/cu-real-estate-and-technology-initiative-fund"
 "Peyton Linafelter Memorial Fund","","To provide support for the Division of Gynecologic Oncology at the University of Colorado Anschutz Medical Campus, in memory of Peyton Linafelter.
 ","View Peyton's obituary >
 
-","","0223403","","0","1","CU Anschutz","",""
+","","0223403","","0","1","CU Anschutz","","","/fund/peyton-linafelter-memorial-fund"
 "Debbie and Mark Kennedy First Generation Endowed Scholarship Fund at CU Denver","miranda.clark@cu.edu","To provide undergraduate scholarship awards for first generation students at the University of Colorado Denver who are the first in their family to pursue a bachelor's degree.
-","","Wednesday, October 7, 2020","0350180","","0","1","CU Denver","Office of Financial Aid and Scholarships","Scholarships & Student Success"
+","","Wednesday, October 7, 2020","0350180","","0","1","CU Denver","Office of Financial Aid and Scholarships","Scholarships & Student Success","/fund/debbie-and-mark-kennedy-first-generation-endowed-scholarship-fund-cu-denver"
 "Debbie and Mark Kennedy First Generation Endowed Scholarship Fund at UCCS","miranda.clark@cu.edu","To provide undergraduate scholarship awards for first generation students at the University of Colorado Colorado Springs who are the first in their family to pursue a bachelor's degree.
-","","Wednesday, October 7, 2020","0450125","","0","1","UCCS","Office of Financial Aid and Student Employment","Scholarships & Student Success"
+","","Wednesday, October 7, 2020","0450125","","0","1","UCCS","Office of Financial Aid and Student Employment","Scholarships & Student Success","/fund/debbie-and-mark-kennedy-first-generation-endowed-scholarship-fund-uccs"
 "Debbie and Mark Kennedy First Generation Endowed Scholarship Fund at CU Boulder","miranda.clark@cu.edu","To provide undergraduate scholarship awards for first generation students at the University of Colorado Boulder who are the first in their family to pursue a bachelor's degree.
-","","Wednesday, October 7, 2020","0151644","","0","1","CU Boulder","Campus Programs","Scholarships & Student Success"
+","","Wednesday, October 7, 2020","0151644","","0","1","CU Boulder","Campus Programs","Scholarships & Student Success","/fund/debbie-and-mark-kennedy-first-generation-endowed-scholarship-fund-cu-boulder"
 "Debbie and Mark Kennedy First Generation Endowed Scholarship Fund at the Anschutz Medical Campus","miranda.clark@cu.edu","To provide scholarship awards for first generation students at the University of Colorado Anschutz Medical Campus who are the first in their family to pursue a degree or higher.
-","","Wednesday, October 7, 2020","0250446","","0","1","CU Anschutz","Vice Chancellor for Health Affairs","Scholarships & Student Success"
+","","Wednesday, October 7, 2020","0250446","","0","1","CU Anschutz","Vice Chancellor for Health Affairs","Scholarships & Student Success","/fund/debbie-and-mark-kennedy-first-generation-endowed-scholarship-fund-anschutz-medical-campus"
 "Carol Ann Andersen Memorial Fund","stacey.boehmer@cuanschutz.edu","To provide support for the Alzheimer's and Cognition Center in the Department of Neurology at the University of Colorado Anschutz Medical Campus.
-","","Monday, October 5, 2020","0223401","","0","1","CU Anschutz","",""
+","","Monday, October 5, 2020","0223401","","0","1","CU Anschutz","","","/fund/carol-ann-andersen-memorial-fund"
