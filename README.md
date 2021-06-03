@@ -120,6 +120,30 @@ Things to include:
 - What is the SLA for service disruption resolution?
 - Ways to run "smoke tests" after a deploy, if that makes sense.
 
+### Recreating Heroku Databases
+
+Locally, you can reset the database by running one command that combines several others: `yarn db:reset`.
+
+On Heroku, however, you can't simply create databases with predefined names. Instead it is best to reset
+the database manually and then run some commands.
+
+You can use the Heroku CLI to reset the database, but you can also do it through the UI and end up at some
+page like: https://data.heroku.com/datastores/6f5b95a3-66d3-41d0-90e9-b515290d7f71#administration. There
+under "Settings" you can reset the database.
+
+To seed the database run the following commands:
+
+```bash
+# Use updated db schema.
+heroku run rake db:migrate -a giving-backend-staging
+
+# Add seed data.
+heroku run rake db:seed -a giving-backend-staging
+
+# Reindex search for frontend.
+heroku run rake algoliasearch:reindex -a giving-backend-staging 
+```
+
 ## Additional Docs
 
 You'll inevitably have more information to write down about all the topics above. For instance, detailing how
