@@ -53,10 +53,6 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem "omniauth-auth0", "~> 3.0"
-
-gem "omniauth-rails_csrf_protection", "~> 1.0.0"
-
 gem "pagy", "~> 3.13"
 
 gem "friendly_id", "~> 5.4"
@@ -64,7 +60,5 @@ gem "friendly_id", "~> 5.4"
 gem "algoliasearch-rails", "~> 2.0"
 
 gem "cloudinary", "~> 1.20"
-
-gem "scout_apm", "~> 4.0"
 
 gem "newrelic_rpm", "~> 7.0"

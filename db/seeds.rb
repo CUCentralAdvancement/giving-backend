@@ -12,8 +12,10 @@ CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
   # Deal with the three fund types.
   if 'Write-in Fund' == row['title']
     fund_type = "write_in"
-  elsif ['CU Anschutz Alumni License Plate Fund', 'CU Denver Alumni License Plate Program', 'CU Scholarship
- License Plate Fund'].include?(row['title'])
+  #  @todo Fix this for CU Boulder...I think splitting the text might be an issue since Denver and Anschutz
+  # do have the proper fund_type after seeding.
+  elsif ['CU Anschutz Alumni License Plate Fund', 'CU Denver Alumni License Plate Program',
+         'CU Scholarship License Plate Fund'].include?(row['title'])
     fund_type = 'license_plate'
   else
     fund_type = "default"
