@@ -1,5 +1,5 @@
 describe('Fund CRUD tests', function () {
-  it('Fails to save if slug is reserved', function () {
+  xit('Fails to save if slug is reserved', function () {
     cy.login('content_editor')
 
     cy.visit('/funds/bridge-forward-scholarship-endowment/edit')

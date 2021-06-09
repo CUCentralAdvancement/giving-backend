@@ -7,6 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
+puts "\n\n\nCreating Seed users \n\n\n"
+User.create(
+  email: "alexander.finnarn@cu.edu",
+  password: "admin123!",
+  password_confirmation: "admin123!",
+
+)
+
 puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
   # Deal with the three fund types.
