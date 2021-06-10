@@ -62,3 +62,8 @@ gem "algoliasearch-rails", "~> 2.0"
 gem "cloudinary", "~> 1.20"
 
 gem "newrelic_rpm", "~> 7.0"
+
+gem "devise", "~> 4.8"
+
+gem "sendgrid-actionmailer", "~> 3.2"
+gem "letter_opener", "~> 1.7", group: :development

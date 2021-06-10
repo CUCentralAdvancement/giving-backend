@@ -1,6 +1,6 @@
 class FaqsController < ApplicationController
   before_action :set_faq, only: %i[ show edit update destroy ]
-  # before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:show]
 
   include Pagy::Backend
 
