@@ -3,12 +3,14 @@ updates:
   - package-ecosystem: "bundler"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "wednesday"
     labels:
       - "dependencies"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "wednesday"
     labels:
       - "dependencies"
