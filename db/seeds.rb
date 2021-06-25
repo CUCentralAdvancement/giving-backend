@@ -8,20 +8,36 @@
 require 'csv'
 
 puts "\n\n\nCreating Seed users \n\n\n"
-User.create(
+alex1 = User.create(
   email: "alexander.finnarn@cu.edu",
   password: "admin123!",
   password_confirmation: "admin123!",
-
 )
+alex2 = User.create(
+  email: "alex.finnarn@gmail.com",
+  password: "admin123!",
+  password_confirmation: "admin123!",
+)
+
+puts "\n\n\nCreating Spaces \n\n\n"
+ce_space = Space.create(
+  name: 'Content Editor',
+  description: 'For content editors'
+)
+ce_space.users << alex1
+fe_space = Space.create(
+  name: 'Fund Manager',
+  description: 'For fund managers'
+)
+fe_space.users << alex2
 
 puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
   # Deal with the three fund types.
   if 'Write-in Fund' == row['title']
     fund_type = "write_in"
-  #  @todo Fix this for CU Boulder...I think splitting the text might be an issue since Denver and Anschutz
-  # do have the proper fund_type after seeding.
+    #  @todo Fix this for CU Boulder...I think splitting the text might be an issue since Denver and Anschutz
+    # do have the proper fund_type after seeding.
   elsif ['CU Anschutz Alumni License Plate Fund', 'CU Denver Alumni License Plate Program',
          'CU Scholarship License Plate Fund'].include?(row['title'])
     fund_type = 'license_plate'
@@ -62,7 +78,6 @@ faqs.each do |faq|
              })
   puts faq['title']
 end
-
 
 puts "\n\n\nCreating Pages...\n\n\n"
 CSV.foreach(Rails.root.join('db/seeds/pages-seed.csv'), headers: true) do |row|

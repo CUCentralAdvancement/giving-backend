@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :spaces
   devise_for :users
   resources :faqs
   resources :funds
