@@ -17,24 +17,24 @@ describe('Basic Authentication Tests', function () {
     cy.get('#alert').contains('You must be signed in to continue.');
   });
 
-  // xit('Fails to login with name and password', function () {
-  //   cy.visit('/');
-  //   cy.get('input[name=name]').type('foo@bar.com');
-  //   cy.get('input[name=password]').type('foop{enter}');
-  //   cy.contains('Sorry, unrecognized username or password. Have you forgotten your password?');
-  // });
+  it('Fails to login with name and password', function () {
+    cy.visit('/');
+    cy.get('input[name=name]').type('foo@bar.com');
+    cy.get('input[name=password]').type('foop{enter}');
+    cy.contains('Sorry, unrecognized username or password. Have you forgotten your password?');
+  });
 
-  // xit('Fails to login without name', function () {
-  //   cy.visit('/user');
-  //   cy.get('input[name=pass]').type('foop{enter}');
-  //   cy.contains('Email Address field is required.');
-  // });
+  it('Fails to login without name', function () {
+    cy.visit('/user');
+    cy.get('input[name=pass]').type('foop{enter}');
+    cy.contains('Email Address field is required.');
+  });
 
-  // xit('Fails to login without password', function () {
-  //   cy.visit('/user');
-  //   cy.get('input[name=name]').type('foo@bar.com{enter}');
-  //   cy.contains('Password field is required.');
-  // });
+  it('Fails to login without password', function () {
+    cy.visit('/user');
+    cy.get('input[name=name]').type('foo@bar.com{enter}');
+    cy.contains('Password field is required.');
+  });
 
   it('Administrator logs in, views content overview, logs out, cannot view content overview', function () {
     cy.visit('/');
@@ -63,7 +63,7 @@ describe('Basic Authentication Tests', function () {
     // });
   });
 
-  xit('Anonymous user cannot get to critical routes', function () {
+  it('Anonymous user cannot get to critical routes', function () {
     const routes = [
       '/admin/config/development/performance',
       '/admin/people/permissions',

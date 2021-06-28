@@ -9,24 +9,28 @@ require 'csv'
 
 puts "\n\n\nCreating Seed users \n\n\n"
 alex1 = User.create(
-  email: "alexander.finnarn@cu.edu",
-  password: "admin123!",
-  password_confirmation: "admin123!",
+  email: 'alexander.finnarn@cu.edu',
+  password: 'admin123!',
+  password_confirmation: 'admin123!',
+  confirmed_at: Time.now.to_datetime
 )
 alex2 = User.create(
-  email: "alex.finnarn@gmail.com",
-  password: "admin123!",
-  password_confirmation: "admin123!",
+  email: 'alex.finnarn@gmail.com',
+  password: 'admin123!',
+  password_confirmation: 'admin123!',
+  confirmed_at: Time.now.to_datetime
 )
 
 puts "\n\n\nCreating Spaces \n\n\n"
 ce_space = Space.create(
   name: 'Content Editor',
+  slug: 'content-editors',
   description: 'For content editors'
 )
 ce_space.users << alex1
 fe_space = Space.create(
   name: 'Fund Manager',
+  slug: 'fund-managers',
   description: 'For fund managers'
 )
 fe_space.users << alex2
@@ -34,15 +38,15 @@ fe_space.users << alex2
 puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
   # Deal with the three fund types.
-  if 'Write-in Fund' == row['title']
-    fund_type = "write_in"
+  if row['title'] == 'Write-in Fund'
+    fund_type = 'write_in'
     #  @todo Fix this for CU Boulder...I think splitting the text might be an issue since Denver and Anschutz
     # do have the proper fund_type after seeding.
   elsif ['CU Anschutz Alumni License Plate Fund', 'CU Denver Alumni License Plate Program',
          'CU Scholarship License Plate Fund'].include?(row['title'])
     fund_type = 'license_plate'
   else
-    fund_type = "default"
+    fund_type = 'default'
   end
 
   Fund.create({
@@ -54,7 +58,7 @@ CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|
                 marketing_content_expiration: row['marketing_content_expiration'],
                 # Using a fake allocation code for write-in so it can be targeted elsewhere. The allocation
                 # code is the closest thing a fund has to a unique ID.
-                allocation_code: 'Write-in Fund' == row['title'] ? '9921871' : row['allocation_code'],
+                allocation_code: row['title'] == 'Write-in Fund' ? '9921871' : row['allocation_code'],
                 suggested_amount: row['suggested_amount'],
                 featured_fund: row['featured_fund'],
                 active: row['active'],

@@ -5,7 +5,8 @@ class FundsController < ApplicationController
 
   # GET /funds or /funds.json
   def index
-    @pagy, @funds = pagy(Fund.order(created_at: :desc))
+    @pagy, @funds = pagy(policy_scope(Fund).order(created_at: :desc))
+    authorize @funds
   end
 
   def paths
@@ -19,6 +20,7 @@ class FundsController < ApplicationController
   # GET /funds/new
   def new
     @fund = Fund.new
+    authorize @fund
   end
 
   # GET /funds/1/edit
@@ -28,6 +30,7 @@ class FundsController < ApplicationController
   # POST /funds or /funds.json
   def create
     @fund = Fund.new(fund_params)
+    authorize @fund
 
     respond_to do |format|
       if @fund.save
@@ -66,7 +69,8 @@ class FundsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_fund
-    @fund = Fund.friendly.find(params[:id])
+    @fund = policy_scope(Fund).friendly.find(params[:id])
+    authorize @fund
     if params[:id] != @fund.slug
       redirect_to @fund
     end

@@ -3,16 +3,22 @@ class SpacesController < ApplicationController
 
   # GET /spaces or /spaces.json
   def index
-    @spaces = Space.all
+    @spaces = policy_scope(Space).all
+    authorize @spaces
   end
 
   # GET /spaces/1 or /spaces/1.json
   def show
   end
 
+  # GET /spaces/1/members or /spaces/1/members.json
+  def members
+  end
+
   # GET /spaces/new
   def new
     @space = Space.new
+    authorize @space
   end
 
   # GET /spaces/1/edit
@@ -22,8 +28,7 @@ class SpacesController < ApplicationController
   # POST /spaces or /spaces.json
   def create
     @space = Space.new(space_params)
-    # user = User.find_or_create_by(email: params[:space][:user_name])
-    # byebug
+    authorize @space
 
     respond_to do |format|
       if @space.save
@@ -61,7 +66,8 @@ class SpacesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_space
-      @space = Space.find(params[:id])
+      @space = policy_scope(Space).find(params[:id])
+      authorize @space
     end
 
     # Only allow a list of trusted parameters through.
