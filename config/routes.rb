@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   get '/paths/fund' => 'funds#paths'
   get '/paths/faq' => 'faqs#paths'
   get '/paths/page' => 'pages#paths'
+
+  # Tried for a 404 solution. Did not work but might be helpful to reference while learning.
+  # match '*unmatched', to: 'application#render_not_found', via: :all
 end

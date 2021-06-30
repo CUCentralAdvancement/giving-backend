@@ -1,19 +1,37 @@
 class SpacePolicy < ApplicationPolicy
 
   def index?
-    true
+    is_admin?
   end
 
   def show?
     true
   end
 
-  def paths?
-    true
+  def new?
+    is_admin?
+  end
+
+  def edit?
+    is_admin?
+  end
+
+  def create?
+    is_admin?
+  end
+
+  def update?
+    is_admin?
   end
 
   def destroy?
-    user.admin?
+    is_admin?
+  end
+
+  private
+
+  def is_admin?
+    user.present? && user.admin?
   end
 
   class Scope < Scope

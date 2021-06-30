@@ -11,6 +11,7 @@ class FundsController < ApplicationController
 
   def paths
     @paths = Fund.pluck(:slug)
+    authorize :fund, :paths?
   end
 
   # GET /funds/1 or /funds/1.json

@@ -5,12 +5,13 @@ class PagesController < ApplicationController
 
   # GET /pages or /pages.json
   def index
-    @pages = policy_scope(Page).all.with_rich_text_content_and_embeds
+    @pagy, @pages =  pagy(policy_scope(Page).all.with_rich_text_content_and_embeds)
     authorize @pages
   end
 
   def paths
     @paths = Page.pluck(:slug)
+    authorize :page, :paths?
   end
 
   # GET /pages/1 or /pages/1.json

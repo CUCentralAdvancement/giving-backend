@@ -1,4 +1,4 @@
-class PagePolicy < ApplicationPolicy
+class FaqPolicy < ApplicationPolicy
 
   def index?
     is_content_editor?
