@@ -30,12 +30,11 @@ jobs:
       - name: Setup code
         run: yarn
 
-      - name: Migrate db.
-        run: yarn migrate
+      - name: Create and seed the database.
+        run: yarn db:create
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           spec: cypress/integration/automated/**/*
-          build: yarn build
-          start: yarn start
+          start: yarn dev
