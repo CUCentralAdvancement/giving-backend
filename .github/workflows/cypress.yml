@@ -23,6 +23,11 @@ jobs:
           - 5434:5432
     env:
       DATABASE_URL: postgres://postgres:ralphie@localhost:5434/postgres
+      ALGOLIASEARCH_APPLICATION_ID: ${{ secrets.ALGOLIASEARCH_APPLICATION_ID }}
+      ALGOLIASEARCH_API_KEY: ${{ secrets.ALGOLIASEARCH_API_KEY }}
+      CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+      ADMIN_EMAILS: ${{ secrets.ADMIN_EMAILS }}
+      SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
