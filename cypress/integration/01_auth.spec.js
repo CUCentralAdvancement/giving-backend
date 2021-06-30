@@ -18,6 +18,11 @@ describe('Basic Authentication Tests', function () {
 
   xit('Fails to login with name and password', function () {
     cy.visit('/');
+
+    // Add wait for Webpacker to compile...
+    /* eslint-disable-next-line */
+    cy.wait(6000);
+
     cy.get('input[value="Log In"]').click();
     cy.get('input#user_email').type('foo@bar.com');
     cy.get('input#user_password').type('foop');
