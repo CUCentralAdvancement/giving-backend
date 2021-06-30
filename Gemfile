@@ -53,7 +53,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem "pagy", "~> 4.8"
+gem "pagy", "~> 4.10"
 
 gem "friendly_id", "~> 5.4"
 
