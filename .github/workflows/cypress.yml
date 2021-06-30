@@ -27,6 +27,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
       - name: Setup code
         run: yarn
 
