@@ -1,16 +1,17 @@
 class FaqsController < ApplicationController
   before_action :set_faq, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:show]
-
+  before_action :authenticate_user!, except: [:show, :paths]
   include Pagy::Backend
 
   # GET /faqs or /faqs.json
   def index
     @pagy, @faqs = pagy(Faq.order(created_at: :desc))
+    authorize @faqs
   end
 
   def paths
     @paths = Faq.pluck(:slug)
+    authorize :faq, :paths?
   end
 
   # GET /faqs/1 or /faqs/1.json
@@ -20,6 +21,7 @@ class FaqsController < ApplicationController
   # GET /faqs/new
   def new
     @faq = Faq.new
+    authorize @faq
   end
 
   # GET /faqs/1/edit
@@ -29,6 +31,7 @@ class FaqsController < ApplicationController
   # POST /faqs or /faqs.json
   def create
     @faq = Faq.new(faq_params)
+    authorize @faq
 
     respond_to do |format|
       if @faq.save
@@ -66,7 +69,8 @@ class FaqsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_faq
-      @faq = Faq.friendly.find(params[:id])
+      @faq = policy_scope(Faq).friendly.find(params[:id])
+      authorize @faq
       if params[:id] != @faq.slug
         redirect_to @faq
       end

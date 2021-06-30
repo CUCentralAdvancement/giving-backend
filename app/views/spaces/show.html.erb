@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @space.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @space.description %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @space.slug %>
+</p>
+
+<p>
+<h2>Users</h2>
+<ul>
+  <% @space.users.each do |user| %>
+    <li><%= user.email %></li>
+  <% end %>
+</ul>
+</p>
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>

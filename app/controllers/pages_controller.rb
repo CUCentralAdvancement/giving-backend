@@ -1,16 +1,17 @@
 class PagesController < ApplicationController
   before_action :set_page, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:show]
-
+  before_action :authenticate_user!, except: [:show, :paths]
   include Pagy::Backend
 
   # GET /pages or /pages.json
   def index
-    @pages = Page.all.with_rich_text_content_and_embeds
+    @pagy, @pages =  pagy(policy_scope(Page).all.with_rich_text_content_and_embeds)
+    authorize @pages
   end
 
   def paths
     @paths = Page.pluck(:slug)
+    authorize :page, :paths?
   end
 
   # GET /pages/1 or /pages/1.json
@@ -20,6 +21,7 @@ class PagesController < ApplicationController
   # GET /pages/new
   def new
     @page = Page.new
+    authorize @page
   end
 
   # GET /pages/1/edit
@@ -29,6 +31,7 @@ class PagesController < ApplicationController
   # POST /pages or /pages.json
   def create
     @page = Page.new(page_params)
+    authorize @page
 
     respond_to do |format|
       if @page.save
@@ -66,7 +69,8 @@ class PagesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
-      @page = Page.friendly.find(params[:id])
+      @page = policy_scope(Page).friendly.find(params[:id])
+      authorize @page
       if params[:id] != @page.slug
         redirect_to @page
       end

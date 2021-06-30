@@ -1,0 +1,50 @@
+<%= form_with(model: space) do |form| %>
+  <% if space.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(space.errors.count, "error") %> prohibited this space from being saved:</h2>
+
+      <ul>
+        <% space.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-flow-row auto-rows-max gap-3">
+
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "w-full" %>
+
+    <% if form.object.persisted? %>
+      <%= form.label :slug %>
+      <%= form.text_field :slug, class: "w-full" %>
+    <% end %>
+
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "w-full" %>
+
+    <div>
+      <h3>Current Users</h3>
+      <% @space.users.each do |user| %>
+          <span class="pl-3 py-3 list-none border"><%= user.email %> <span class="p-3 text-white bg-red-500
+          rounded cursor-pointer">X</span></span>
+      <% end %>
+    </div>
+
+    <%= form.label "Add User" %>
+    <div>
+      <%= form.text_field :user_name, list: "users_autocomplete", autocomplete: 'off', class: 'w-11/12' %>
+      <datalist id="users_autocomplete">
+        <% User.all.each do |user| %>
+          <% unless @space.users.include?(user) %>
+            <option value="<%= user.email %>">
+          <% end %>
+        <% end %>
+      </datalist>
+      <span class="w-1/12 p-3 text-white bg-green-500 rounded cursor-pointer">+</span>
+    </div>
+
+    <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
+  </div>
+<% end %>
