@@ -1,6 +1,7 @@
 require "friendly_id/slug_generator"
 class Space < ApplicationRecord
-  has_and_belongs_to_many :users
+  has_many :memberships
+  has_many :users, through: :memberships
 
   class ReusableSlugGenerator < FriendlyId::SlugGenerator
     def available?(slug)

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @membership.type %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @membership.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @membership.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_membership_path(@membership) %> |
+<%= link_to 'Back', memberships_path %>

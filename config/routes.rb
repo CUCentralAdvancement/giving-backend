@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :funds
   resources :pages
   resources :spaces do
-    get 'members' => 'spaces#members'
+    resources :memberships
   end
 
   get '/dashboard' => 'dashboard#show'

@@ -7,10 +7,5 @@ class CreateSpaces < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
-
-    create_join_table :users, :spaces do |t|
-      t.index :user_id
-      t.index :space_id
-    end
   end
 end
