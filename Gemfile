@@ -61,7 +61,7 @@ gem "algoliasearch-rails", "~> 2.1"
 
 gem "cloudinary", "~> 1.20"
 
-gem "newrelic_rpm", "~> 7.1"
+gem "newrelic_rpm", "~> 7.2"
 
 gem "devise", "~> 4.8"
 
