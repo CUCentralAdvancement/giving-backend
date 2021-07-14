@@ -14,7 +14,7 @@
     "reindex": "./bin/rake algoliasearch:reindex"
   },
   "dependencies": {
-    "@rails/actioncable": "^6.0.0",
+    "@rails/actioncable": "^6.1.4",
     "@rails/actiontext": "^6.1.3",
     "@rails/activestorage": "^6.1.4",
     "@rails/ujs": "^6.1.4",
