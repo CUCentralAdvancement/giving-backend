@@ -13,6 +13,7 @@ describe('Basic Authentication Tests', function () {
 
   it('Gets redirected from user to login page if unauthenticated', function () {
     // Add wait for Webpacker to compile...
+    cy.visit('/');
     /* eslint-disable-next-line */
     cy.wait(6000);
 
