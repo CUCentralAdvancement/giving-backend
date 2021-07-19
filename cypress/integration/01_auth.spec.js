@@ -12,16 +12,16 @@ describe('Basic Authentication Tests', function () {
   // });
 
   it('Gets redirected from user to login page if unauthenticated', function () {
+    // Add wait for Webpacker to compile...
+    /* eslint-disable-next-line */
+    cy.wait(6000);
+
     cy.visit('/dashboard', { failOnStatusCode: false });
     cy.get('#alert').contains('You need to sign in or sign up before continuing.');
   });
 
   xit('Fails to login with name and password', function () {
     cy.visit('/');
-
-    // Add wait for Webpacker to compile...
-    /* eslint-disable-next-line */
-    cy.wait(6000);
 
     cy.get('input[value="Log In"]').click();
     cy.get('input#user_email').type('foo@bar.com');

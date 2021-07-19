@@ -27,13 +27,10 @@ class MembershipsController < ApplicationController
     # Add user and space from form.
     user = User.find_by(email: membership_params[:user])
     space = Space.find_by(name: membership_params[:space])
-
     new_params = membership_params
     new_params[:user] = user
     new_params[:space] = space
     new_params[:level] = membership_params[:level].to_i
-
-    # byebug
 
     @membership = Membership.new(new_params)
     authorize @membership
