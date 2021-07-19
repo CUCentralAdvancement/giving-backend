@@ -24,7 +24,18 @@ class MembershipsController < ApplicationController
 
   # POST /memberships or /memberships.json
   def create
-    @membership = Membership.new(membership_params)
+    # Add user and space from form.
+    user = User.find_by(email: membership_params[:user])
+    space = Space.find_by(name: membership_params[:space])
+
+    new_params = membership_params
+    new_params[:user] = user
+    new_params[:space] = space
+    new_params[:level] = membership_params[:level].to_i
+
+    # byebug
+
+    @membership = Membership.new(new_params)
     authorize @membership
 
     respond_to do |format|
@@ -53,9 +64,10 @@ class MembershipsController < ApplicationController
 
   # DELETE /memberships/1 or /memberships/1.json
   def destroy
+    space = @membership.space
     @membership.destroy
     respond_to do |format|
-      format.html { redirect_to space_memberships_path, notice: 'Membership was successfully destroyed.' }
+      format.html { redirect_to space_path(space), notice: 'Membership was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +82,6 @@ class MembershipsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def membership_params
-    params.require(:membership).permit(:type, :start_date, :end_date)
+    params.require(:membership).permit(:level, :aasm_state, :start_date, :end_date, :space, :user)
   end
 end

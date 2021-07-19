@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   devise_for :users
   resources :faqs
   resources :funds
+  resources :memberships
   resources :pages
   resources :spaces do
-    resources :memberships
+    get '/members' => 'spaces#members'
   end
 
   get '/dashboard' => 'dashboard#show'

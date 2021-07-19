@@ -11,22 +11,45 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type %>
-  </div>
+  <div class="grid grid-flow-row auto-rows-max gap-3">
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.datetime_select :start_date %>
-  </div>
+    <%= form.label :level %>
+    <%= form.select :level, Membership.levels.map { |k, v| [k.humanize, v] } %>
 
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
-  </div>
+    <%#= form.label :start_date %>
+<!--    <div>-->
+      <%#= form.datetime_select :start_date %>
+<!--    </div>-->
 
-  <div class="actions">
-    <%= form.submit %>
+    <%#= form.label :end_date %>
+<!--    <div>-->
+      <%#= form.datetime_select :end_date %>
+<!--    </div>-->
+
+    <div>
+      <%= form.label :user %>
+      <%= form.text_field :user, list: "users_autocomplete", autocomplete: 'off', class: 'w-full' %>
+      <datalist id="users_autocomplete">
+        <% User.all.each do |user| %>
+          <%# unless @space.users.include?(user) %>
+          <option value="<%= user.email %>">
+            <%# end %>
+        <% end %>
+      </datalist>
+    </div>
+
+    <div>
+      <%= form.label :space %>
+      <%= form.text_field :space, list: "spaces_autocomplete", autocomplete: 'off', class: 'w-full' %>
+      <datalist id="spaces_autocomplete">
+        <% Space.all.each do |space| %>
+          <%# unless @space.users.include?(user) %>
+          <option value="<%= space.name %>">
+            <%# end %>
+        <% end %>
+      </datalist>
+    </div>
+
+    <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
   </div>
 <% end %>

@@ -13,6 +13,11 @@ class SpacesController < ApplicationController
   # GET /spaces/1 or /spaces/1.json
   def show; end
 
+  # GET /spaces/:slug/members or /spaces/:slug/members.json
+  def members
+    @space = policy_scope(Space).friendly.find(params[:space_id])
+  end
+
   # GET /spaces/new
   def new
     @space = Space.new
@@ -64,8 +69,9 @@ class SpacesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_space
-    @space = policy_scope(Space).find(params[:id])
+    @space = policy_scope(Space).friendly.find(params[:id])
     authorize @space
+    redirect_to @space if params[:id] != @space.slug
   end
 
   # Only allow a list of trusted parameters through.

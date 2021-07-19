@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_23_201340) do
+ActiveRecord::Schema.define(version: 2021_07_09_175547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,6 +92,17 @@ ActiveRecord::Schema.define(version: 2021_06_23_201340) do
     t.index ["slug"], name: "index_funds_on_slug", unique: true
   end
 
+  create_table "memberships", force: :cascade do |t|
+    t.string "aasm_state"
+    t.integer "level"
+    t.bigint "space_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["space_id"], name: "index_memberships_on_space_id"
+    t.index ["user_id"], name: "index_memberships_on_user_id"
+  end
+
   create_table "pages", force: :cascade do |t|
     t.string "title", null: false
     t.string "slug", null: false
@@ -107,13 +118,6 @@ ActiveRecord::Schema.define(version: 2021_06_23_201340) do
     t.string "slug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "spaces_users", id: false, force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "space_id", null: false
-    t.index ["space_id"], name: "index_spaces_users_on_space_id"
-    t.index ["user_id"], name: "index_spaces_users_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -15,14 +15,28 @@
   <%= @space.slug %>
 </p>
 
-<p>
-<h2>Users</h2>
-<ul>
-  <% @space.users.each do |user| %>
-    <li><%= user.email %></li>
+<h3>Current Members</h3>
+<table class="table-auto border-collapse border mb-3 w-full">
+  <thead>
+  <tr>
+    <th class="border p-2">Name</th>
+    <th class="border p-2">Level</th>
+<!--    <th class="border p-2">Start Date</th>-->
+<!--    <th class="border p-2">End Date</th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @space.memberships.each do |membership| %>
+    <tr>
+      <td class="p-2 border"><%= membership.user.email %> </td>
+      <td class="p-2 border"><%= membership.level %> </td>
+<!--      <td class="p-2 border"><%#= membership.start_date %> </td>-->
+<!--      <td class="p-2 border"><%#= membership.end_date %> </td>-->
+    </tr>
   <% end %>
-</ul>
-</p>
+  </tbody>
+</table>
 
 <%= link_to 'Edit', edit_space_path(@space) %> |
 <%= link_to 'Back', spaces_path %>

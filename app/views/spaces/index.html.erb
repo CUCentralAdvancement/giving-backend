@@ -1,37 +1,43 @@
-<p id="notice"><%= notice %></p>
+<div class="flex justify-between items-center">
+  <h1 class="text-3xl my-4">Space Is The Place</h1>
+  <span class="text-white bg-gold p-3 rounded shadow">
+    <%= link_to 'New Space', new_space_path, class: "text-white no-underline" %>
+  </span>
+</div>
 
-<h1>Spaces</h1>
-
-<table>
+<table class="table-auto border-collapse border mb-3 w-full">
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Slug</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th class="border p-2">Name</th>
+    <th class="border p-2">Description</th>
+    <th class="border p-2">Users</th>
+    <th class="border p-2">Updated At</th>
+    <th class="border p-2" colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @spaces.each do |space| %>
-      <tr>
-        <td><%= space.name %></td>
-        <td><%= space.description %></td>
-        <td><%= space.slug %></td>
-        <td>
-          <% space.users.each do |user| %>
-            <span><%= user.email %></span>,
+  <% @spaces.each do |space| %>
+    <tr>
+      <td class="p-2 border"><%= link_to space.name, space %></td>
+      <td class="p-2 border"><%= space.description %></td>
+      <td class="p-2 border">
+        <% space.users.each_with_index do |user, index| %>
+          <% if index != 0 %>
+            <span>,</span>
           <% end %>
-        </td>
-        <td><%= link_to 'Show', space %></td>
-        <td><%= link_to 'Edit', edit_space_path(space) %></td>
-        <td><%= link_to 'Destroy', space, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+          <span><%= user.email %></span>
+        <% end %>
+      </td>
+      <td class="p-2 border"><%= space.updated_at %></td>
+      <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
+        <!--  .parameterize both lowercases and adds a dash. It is from Acrive Support.  -->
+        <span data-testid="edit-<%= space.name.parameterize %>-space" class="bg-blue-600 p-2 rounded shadow">
+          <%= link_to 'Edit', edit_space_path(space), class: "text-white no-underline" %>
+        </span>
+        <%# <span class="bg-red-600 p-2 rounded shadow"><%= link_to 'X', fund, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Space', new_space_path %>

@@ -21,19 +21,42 @@ alex2 = User.create(
   confirmed_at: Time.now.to_datetime
 )
 
+User.create(
+  email: 'alex.finnarn+2@gmail.com',
+  password: 'admin123!',
+  password_confirmation: 'admin123!',
+  confirmed_at: Time.now.to_datetime
+)
+
 puts "\n\n\nCreating Spaces \n\n\n"
 ce_space = Space.create(
   name: 'Content Editor',
   slug: 'content-editors',
   description: 'For content editors'
 )
-ce_space.users << alex1
-fe_space = Space.create(
+# ce_space.users << alex1
+fm_space = Space.create(
   name: 'Fund Manager',
   slug: 'fund-managers',
   description: 'For fund managers'
 )
-fe_space.users << alex2
+# fe_space.users << alex2
+
+puts "\n\n\nCreating Memberships \n\n\n"
+Membership.create(
+  level: 10,
+  # start_date: rand(5.months).seconds.ago,
+  # end_date: rand(5.months).seconds.from_now,
+  user: alex1,
+  space: ce_space
+)
+Membership.create(
+  level: 10,
+  # start_date: rand(5.months).seconds.ago,
+  # end_date: rand(5.months).seconds.from_now,
+  user: alex2,
+  space: fm_space
+)
 
 puts "\n\n\nCreating Fund pages \n\n\n"
 CSV.foreach(Rails.root.join('db/seeds/funds-seed.csv'), headers: true) do |row|

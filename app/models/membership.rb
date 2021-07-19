@@ -3,6 +3,7 @@
 class Membership < ApplicationRecord
   belongs_to :space
   belongs_to :user
+  enum level: { cadet: 10, captain: 20 }
 
   include AASM
 

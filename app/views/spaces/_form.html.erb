@@ -24,26 +24,42 @@
     <%= form.label :description %>
     <%= form.text_field :description, class: "w-full" %>
 
-    <div>
-      <h3>Current Users</h3>
-      <% @space.users.each do |user| %>
-          <span class="pl-3 py-3 list-none border"><%= user.email %> <span class="p-3 text-white bg-red-500
-          rounded cursor-pointer">X</span></span>
-      <% end %>
+    <h3 class="text-2xl my-4">Current Members</h3>
+    <div class="flex justify-between items-center">
+      <input type="text" class="flex-grow ml-3 mr-2" placeholder="Search members..."/>
+      <span data-testid="add-member-button" class="text-white bg-gold p-3 mr-3 rounded shadow">
+        <%= link_to 'Add Member', new_membership_path, class: "text-white no-underline" %>
+      </span>
     </div>
+    <table class="table-auto border-collapse border mb-3 w-full">
+      <thead>
+      <tr>
+        <th class="border p-2">Name</th>
+        <th class="border p-2">Level</th>
+        <th class="border p-2">Status</th>
+        <!--        <th class="border p-2">Start Date</th>-->
+        <!--        <th class="border p-2">End Date</th>-->
+        <th class="border p-2"></th>
+      </tr>
+      </thead>
 
-    <%= form.label "Add User" %>
-    <div>
-      <%= form.text_field :user_name, list: "users_autocomplete", autocomplete: 'off', class: 'w-11/12' %>
-      <datalist id="users_autocomplete">
-        <% User.all.each do |user| %>
-          <% unless @space.users.include?(user) %>
-            <option value="<%= user.email %>">
-          <% end %>
-        <% end %>
-      </datalist>
-      <span class="w-1/12 p-3 text-white bg-green-500 rounded cursor-pointer">+</span>
-    </div>
+      <tbody>
+      <% @space.memberships.each do |membership| %>
+        <tr>
+          <td class="p-2 border"><%= membership.user.email %> </td>
+          <td class="p-2 border"><%= membership.level %> </td>
+          <td class="p-2 border"><%= membership.aasm_state %> </td>
+          <!--          <td class="p-2 border"><%#= membership.start_date %> </td>-->
+          <!--          <td class="p-2 border"><%#= membership.end_date %> </td>-->
+          <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
+            <span class="bg-red-600 p-2 rounded shadow"><%= link_to 'X', membership, method: :delete, data: {
+              confirm: 'Are you sure?' }, class: 'text-white no-underline' %>
+            </span>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
 
     <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
   </div>

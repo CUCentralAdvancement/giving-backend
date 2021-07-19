@@ -1,19 +1,24 @@
-<p id="notice"><%= notice %></p>
+<p>
+  <strong>User:</strong>
+  <%= @membership.user.email %>
+</p>
+
+<p>
+  <strong>Space:</strong>
+  <%= @membership.space.name %>
+</p>
 
 <p>
   <strong>Type:</strong>
-  <%= @membership.type %>
+  <%= @membership.level %>
 </p>
 
-<p>
-  <strong>Start date:</strong>
-  <%= @membership.start_date %>
-</p>
 
-<p>
-  <strong>End date:</strong>
-  <%= @membership.end_date %>
-</p>
+<!--  <strong>Start date:</strong>-->
+  <%#= @membership.start_date %>
+<!--  <strong>End date:</strong>-->
+  <%#= @membership.end_date %>
+
 
 <%= link_to 'Edit', edit_membership_path(@membership) %> |
 <%= link_to 'Back', memberships_path %>

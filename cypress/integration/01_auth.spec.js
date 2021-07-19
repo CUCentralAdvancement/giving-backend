@@ -67,8 +67,8 @@ describe('Basic Authentication Tests', function () {
     cy.get('#notice').contains('Signed out successfully.');
   });
 
-  xit('Fund Manager views funds but can\'t view pages', function () {
-    cy.visit('/');
+  it('Fund Manager views funds but can\'t view pages', function () {
+    cy.visit('/users/sign_in');
     cy.get('input[value="Log In"]').click();
     cy.get('input#user_email').type('alex.finnarn@gmail.com');
     cy.get('input#user_password').type('admin123!');
