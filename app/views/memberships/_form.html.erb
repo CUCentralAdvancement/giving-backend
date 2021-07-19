@@ -1,0 +1,55 @@
+<%= form_with(model: membership) do |form| %>
+  <% if membership.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(membership.errors.count, "error") %> prohibited this membership from being saved:</h2>
+
+      <ul>
+        <% membership.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-flow-row auto-rows-max gap-3">
+
+    <%= form.label :level %>
+    <%= form.select :level, Membership.levels.map { |k, v| [k.humanize, v] } %>
+
+    <%#= form.label :start_date %>
+<!--    <div>-->
+      <%#= form.datetime_select :start_date %>
+<!--    </div>-->
+
+    <%#= form.label :end_date %>
+<!--    <div>-->
+      <%#= form.datetime_select :end_date %>
+<!--    </div>-->
+
+    <div>
+      <%= form.label :user %>
+      <%= form.text_field :user, list: "users_autocomplete", autocomplete: 'off', class: 'w-full' %>
+      <datalist id="users_autocomplete">
+        <% User.all.each do |user| %>
+          <%# unless @space.users.include?(user) %>
+          <option value="<%= user.email %>">
+            <%# end %>
+        <% end %>
+      </datalist>
+    </div>
+
+    <div>
+      <%= form.label :space %>
+      <%= form.text_field :space, list: "spaces_autocomplete", autocomplete: 'off', class: 'w-full' %>
+      <datalist id="spaces_autocomplete">
+        <% Space.all.each do |space| %>
+          <%# unless @space.users.include?(user) %>
+          <option value="<%= space.name %>">
+            <%# end %>
+        <% end %>
+      </datalist>
+    </div>
+
+    <%= form.submit "Save", class: "p-2 bg-blue-500 text-white rounded shadow" %>
+  </div>
+<% end %>

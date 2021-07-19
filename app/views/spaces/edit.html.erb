@@ -1,4 +1,9 @@
-<h1>Editing Space</h1>
+<div class="flex justify-between items-center">
+  <h1 class="text-3xl my-4">Editing Space: <%= @space.name %></h1>
+<!--  <span class="text-white bg-gold p-3 rounded shadow">-->
+    <%#= link_to 'Members', space_members_path(@space), class: "text-white no-underline" %>
+<!--  </span>-->
+</div>
 
 <%= render 'form', space: @space %>
 

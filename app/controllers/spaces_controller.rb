@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class SpacesController < ApplicationController
-  before_action :set_space, only: %i[ show edit update destroy ]
+  before_action :set_space, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
   # GET /spaces or /spaces.json
@@ -9,11 +11,11 @@ class SpacesController < ApplicationController
   end
 
   # GET /spaces/1 or /spaces/1.json
-  def show
-  end
+  def show; end
 
-  # GET /spaces/1/members or /spaces/1/members.json
+  # GET /spaces/:slug/members or /spaces/:slug/members.json
   def members
+    @space = policy_scope(Space).friendly.find(params[:space_id])
   end
 
   # GET /spaces/new
@@ -23,8 +25,7 @@ class SpacesController < ApplicationController
   end
 
   # GET /spaces/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /spaces or /spaces.json
   def create
@@ -33,7 +34,7 @@ class SpacesController < ApplicationController
 
     respond_to do |format|
       if @space.save
-        format.html { redirect_to @space, notice: "Space was successfully created." }
+        format.html { redirect_to @space, notice: 'Space was successfully created.' }
         format.json { render :show, status: :created, location: @space }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -46,7 +47,7 @@ class SpacesController < ApplicationController
   def update
     respond_to do |format|
       if @space.update(space_params)
-        format.html { redirect_to @space, notice: "Space was successfully updated." }
+        format.html { redirect_to @space, notice: 'Space was successfully updated.' }
         format.json { render :show, status: :ok, location: @space }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -59,20 +60,22 @@ class SpacesController < ApplicationController
   def destroy
     @space.destroy
     respond_to do |format|
-      format.html { redirect_to spaces_url, notice: "Space was successfully destroyed." }
+      format.html { redirect_to spaces_url, notice: 'Space was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_space
-      @space = policy_scope(Space).find(params[:id])
-      authorize @space
-    end
 
-    # Only allow a list of trusted parameters through.
-    def space_params
-      params.require(:space).permit(:name, :description, :slug)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_space
+    @space = policy_scope(Space).friendly.find(params[:id])
+    authorize @space
+    redirect_to @space if params[:id] != @space.slug
+  end
+
+  # Only allow a list of trusted parameters through.
+  def space_params
+    params.require(:space).permit(:name, :description, :slug)
+  end
 end

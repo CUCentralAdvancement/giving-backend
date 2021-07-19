@@ -12,16 +12,17 @@ describe('Basic Authentication Tests', function () {
   // });
 
   it('Gets redirected from user to login page if unauthenticated', function () {
+    // Add wait for Webpacker to compile...
+    cy.visit('/');
+    /* eslint-disable-next-line */
+    cy.wait(6000);
+
     cy.visit('/dashboard', { failOnStatusCode: false });
     cy.get('#alert').contains('You need to sign in or sign up before continuing.');
   });
 
   xit('Fails to login with name and password', function () {
     cy.visit('/');
-
-    // Add wait for Webpacker to compile...
-    /* eslint-disable-next-line */
-    cy.wait(6000);
 
     cy.get('input[value="Log In"]').click();
     cy.get('input#user_email').type('foo@bar.com');
@@ -67,8 +68,8 @@ describe('Basic Authentication Tests', function () {
     cy.get('#notice').contains('Signed out successfully.');
   });
 
-  xit('Fund Manager views funds but can\'t view pages', function () {
-    cy.visit('/');
+  it('Fund Manager views funds but can\'t view pages', function () {
+    cy.visit('/users/sign_in');
     cy.get('input[value="Log In"]').click();
     cy.get('input#user_email').type('alex.finnarn@gmail.com');
     cy.get('input#user_password').type('admin123!');

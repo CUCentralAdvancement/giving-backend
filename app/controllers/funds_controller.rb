@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class FundsController < ApplicationController
-  before_action :set_fund, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:show, :paths]
+  before_action :set_fund, only: %i[show edit update destroy]
+  before_action :authenticate_user!, except: %i[show paths]
   include Pagy::Backend
 
   # GET /funds or /funds.json
@@ -15,8 +17,7 @@ class FundsController < ApplicationController
   end
 
   # GET /funds/1 or /funds/1.json
-  def show
-  end
+  def show; end
 
   # GET /funds/new
   def new
@@ -25,8 +26,7 @@ class FundsController < ApplicationController
   end
 
   # GET /funds/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /funds or /funds.json
   def create
@@ -35,7 +35,7 @@ class FundsController < ApplicationController
 
     respond_to do |format|
       if @fund.save
-        format.html { redirect_to @fund, notice: "Fund was successfully created." }
+        format.html { redirect_to @fund, notice: 'Fund was successfully created.' }
         format.json { render :show, status: :created, location: @fund }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -48,7 +48,7 @@ class FundsController < ApplicationController
   def update
     respond_to do |format|
       if @fund.update(fund_params)
-        format.html { redirect_to @fund, notice: "Fund was successfully updated." }
+        format.html { redirect_to @fund, notice: 'Fund was successfully updated.' }
         format.json { render :show, status: :ok, location: @fund }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -61,7 +61,7 @@ class FundsController < ApplicationController
   def destroy
     @fund.destroy
     respond_to do |format|
-      format.html { redirect_to funds_url, notice: "Fund was successfully destroyed." }
+      format.html { redirect_to funds_url, notice: 'Fund was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -72,9 +72,7 @@ class FundsController < ApplicationController
   def set_fund
     @fund = policy_scope(Fund).friendly.find(params[:id])
     authorize @fund
-    if params[:id] != @fund.slug
-      redirect_to @fund
-    end
+    redirect_to @fund if params[:id] != @fund.slug
   end
 
   # Only allow a list of trusted parameters through.

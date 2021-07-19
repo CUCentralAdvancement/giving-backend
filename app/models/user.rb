@@ -5,8 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :lockable, :timeoutable, :trackable, :confirmable
 
-  has_and_belongs_to_many :spaces
-  accepts_nested_attributes_for :spaces
+  has_many :memberships
+  has_many :spaces, through: :memberships
+  accepts_nested_attributes_for :memberships
 
   def admin?
     ENV['ADMIN_EMAILS'].include?(self.email)
