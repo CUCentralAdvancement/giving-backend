@@ -1,5 +1,12 @@
 <div class="flex justify-between items-center">
-  <h1 class="text-3xl my-4">Redirects Listing</h1>
+  <div>
+    <h1 class="text-3xl my-4 inline-block">Redirects Listing</h1>
+    <a class="inline-block rounded bg-blue-500 text-white no-underline text-2xl p-2"
+       href="https://github.com/CUCentralAdvancement/giving-backend/blob/main/docs/help/redirects.md"
+       target="_blank">
+      ?
+    </a>
+  </div>
   <span class="text-white bg-gold p-3 rounded shadow">
     <%= link_to '+ New Redirect', new_redirect_path, class: 'text-white no-underline' %>
   </span>

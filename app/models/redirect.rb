@@ -5,10 +5,12 @@ class Redirect < ApplicationRecord
 
   validates :source, uniqueness: true
 
+  # Someone said you should use after_commit since it runs after persisted where after_save does not.
   # after_commit :save_redirect, if: :persisted?
   after_save :save_redirect
   after_destroy :destroy_redirect
 
+  # This can lead to pool connection issues and is definitely not the smartest way to proceed.
   after_initialize do
     @redis = Redis.new
   end
@@ -16,7 +18,6 @@ class Redirect < ApplicationRecord
   private
 
   def save_redirect
-    # byebug
     @redis.set(source, redirect)
   end
 
