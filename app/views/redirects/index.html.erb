@@ -1,0 +1,37 @@
+<div class="flex justify-between items-center">
+  <h1 class="text-3xl my-4">Redirects Listing</h1>
+  <span class="text-white bg-gold p-3 rounded shadow">
+    <%= link_to '+ New Redirect', new_redirect_path, class: 'text-white no-underline' %>
+  </span>
+</div>
+
+<table class="table-fixed border-collapse border mb-3 w-full">
+  <thead>
+  <tr>
+    <th class="w-2/12">Source</th>
+    <th class="w-6/12">Redirect</th>
+    <th class="w-2/12">Expiration</th>
+    <th class="w-1/12">Status</th>
+    <th class="w-1/12">Operations</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @redirects.each do |redirect| %>
+    <tr>
+      <td class="p-2 border"><%= redirect.source %></td>
+      <td class="p-2 border" style="overflow: scroll"><%= redirect.redirect %></td>
+      <td class="p-2 border"><%= redirect.expiration %></td>
+      <td class="p-2 border"><%= redirect.status %></td>
+      <td class="p-2 border grid grid-cols-1 gap-2 text-center text-white">
+        <span class="bg-blue-600 p-2 rounded shadow">
+          <%= link_to 'Edit', edit_redirect_path(redirect) %>
+        </span>
+        <%= link_to 'Destroy', redirect, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= raw pagy_nav(@pagy) %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_09_175547) do
+ActiveRecord::Schema.define(version: 2021_07_27_011158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -110,6 +110,15 @@ ActiveRecord::Schema.define(version: 2021_07_09_175547) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["slug"], name: "index_pages_on_slug", unique: true
+  end
+
+  create_table "redirects", force: :cascade do |t|
+    t.string "source"
+    t.string "redirect"
+    t.datetime "expiration"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "spaces", force: :cascade do |t|

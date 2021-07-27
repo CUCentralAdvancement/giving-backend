@@ -1,0 +1,22 @@
+<p>
+  <strong>Source:</strong>
+  <%= @redirect.source %>
+</p>
+
+<p>
+  <strong>Redirect:</strong>
+  <%= @redirect.redirect %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @redirect.expiration %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @redirect.status %>
+</p>
+
+<%= link_to 'Edit', edit_redirect_path(@redirect), {'data-testid': 'edit-redirect'} %> |
+<%= link_to 'Back', redirects_path %>

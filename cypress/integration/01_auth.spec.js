@@ -92,6 +92,33 @@ describe('Basic Authentication Tests', function () {
     cy.get('#notice').contains('Signed out successfully.');
   });
 
+  it('Only admins can access redirects', function () {
+    cy.visit('/users/sign_in');
+    cy.get('input#user_email').type('alexander.finnarn@cu.edu');
+    cy.get('input#user_password').type('admin123!');
+    cy.get('input[value="Log In"]').click();
+
+    cy.visit('/admin/redirects');
+    cy.get('#alert').contains('You are not authorized to perform this action.');
+
+    cy.get('input[data-testid="logout-button"]').click();
+    cy.get('h1').contains('Hello, and welcome to the CMS!');
+    cy.get('#notice').contains('Signed out successfully.');
+
+    cy.visit('/users/sign_in');
+    cy.get('input[value="Log In"]').click();
+    cy.get('input#user_email').type('alex.finnarn@gmail.com');
+    cy.get('input#user_password').type('admin123!');
+    cy.get('input[value="Log In"]').click();
+
+    cy.visit('/admin/redirects');
+    cy.get('h1').contains('Redirects Listing');
+
+    cy.get('input[data-testid="logout-button"]').click();
+    cy.get('h1').contains('Hello, and welcome to the CMS!');
+    cy.get('#notice').contains('Signed out successfully.');
+  });
+
   it('Anonymous user cannot get to critical routes', function () {
     let routes = [
       '/faqs',
@@ -99,6 +126,7 @@ describe('Basic Authentication Tests', function () {
       '/pages',
       '/spaces',
       '/dashboard',
+      '/admin/redirects',
     ];
 
     routes.forEach((route) => {

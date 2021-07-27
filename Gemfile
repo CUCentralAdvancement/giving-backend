@@ -71,3 +71,5 @@ gem "letter_opener", "~> 1.7", group: :development
 gem "pundit", "~> 2.1"
 
 gem "aasm", "~> 5.2"
+
+gem "redis", "~> 4.3"
