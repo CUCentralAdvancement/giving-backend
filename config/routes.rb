@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   resources :faqs
   resources :funds
@@ -6,6 +7,10 @@ Rails.application.routes.draw do
   resources :pages
   resources :spaces do
     get '/members' => 'spaces#members'
+  end
+
+  scope '/admin' do
+    resources :redirects
   end
 
   get '/dashboard' => 'dashboard#show'

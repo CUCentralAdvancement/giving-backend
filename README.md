@@ -144,13 +144,12 @@ heroku run rake db:seed -a giving-backend-staging
 heroku run rake algoliasearch:reindex -a giving-backend-staging 
 ```
 
-## Additional Docs
+## Help Articles And Additional Docs
 
-You'll inevitably have more information to write down about all the topics above. For instance, detailing how
-you use a hosted search addon can be in its own documentation article linked to the section where you first
-describe the "Services" used in the project.
+Help articles on how to edit the resources:
 
-Place these docs in a `/docs` section of your repo.
+- [Redirects](docs/help/redirects.md) - These are "vanity URLs" that are hosted in a Redis instance within 
+  another application.
 
 ### Fund Model Types
 

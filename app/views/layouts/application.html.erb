@@ -20,6 +20,9 @@
           <a href="/pages" class="p-4 text-white no-underline text-base">Pages</a>
           <a href="/spaces" class="p-4 text-white no-underline text-base">Spaces</a>
           <a href="/dashboard" class="p-4 text-white no-underline text-base">Dashboard</a>
+          <% if current_user.admin? %>
+            <a href="/admin/redirects" class="p-4 text-white no-underline text-base">Redirects</a>
+          <% end %>
         <% end %>
       </div>
       <div class="flex flex-row items-center">

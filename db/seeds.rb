@@ -7,6 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
+puts "\n\n\nCreating Redirects...\n\n\n"
+redirects_seed_path = "#{Rails.root}/db/seeds/redirects.json"
+redirects = JSON.parse(File.read(redirects_seed_path))
+redirects.each do |redirect|
+  Redirect.insert({
+                    source: redirect[0],
+                    redirect: redirect[1],
+                    expiration: 3.years.from_now,
+                    status: 'active',
+                    created_at: 1.day.from_now,
+                    updated_at: 1.day.from_now,
+                  })
+  puts redirect[0]
+end
+
 puts "\n\n\nCreating Seed users \n\n\n"
 alex1 = User.create(
   email: 'alexander.finnarn@cu.edu',

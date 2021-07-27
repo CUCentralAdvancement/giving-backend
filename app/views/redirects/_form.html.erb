@@ -1,0 +1,30 @@
+<%= form_with(model: redirect) do |form| %>
+  <% if redirect.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(redirect.errors.count, "error") %> prohibited this redirect from being saved:</h2>
+
+      <ul>
+        <% redirect.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-flow-row auto-rows-max gap-3">
+
+    <%= form.label :source %>
+    <%= form.text_field :source, class: 'w-full' %>
+
+    <%= form.label :redirect %>
+    <%= form.text_field :redirect %>
+
+    <%= form.label :expiration %>
+    <%= form.datetime_select :expiration, {'value': 1.year.from_now} %>
+
+    <%= form.label :status %>
+    <%= form.select :status, Redirect.statuses.map { |k, v| [k.humanize, v] } %>
+
+    <%= form.submit "Save", class: "p-3 bg-blue-500 text-white rounded shadow w-full"  %>
+  </div>
+<% end %>
