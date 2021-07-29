@@ -72,4 +72,4 @@ gem "pundit", "~> 2.1"
 
 gem "aasm", "~> 5.2"
 
-gem "redis", "~> 4.3"
+gem "redis", "~> 4.4"
