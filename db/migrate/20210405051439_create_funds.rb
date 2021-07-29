@@ -7,7 +7,7 @@ class CreateFunds < ActiveRecord::Migration[6.1]
       # @todo Fix this default date...
       t.datetime :marketing_content_expiration, default: "24867"
       t.string :allocation_code, null: false
-      t.integer :suggested_amount, default: 0
+      t.string :suggested_amount, default: ''
       t.boolean :featured_fund, default: false
       t.boolean :active, default: false
       t.string :campus, null: false

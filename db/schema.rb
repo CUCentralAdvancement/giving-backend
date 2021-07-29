@@ -119,6 +119,7 @@ ActiveRecord::Schema.define(version: 2021_07_27_011158) do
     t.string "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["source"], name: "index_redirects_on_source", unique: true
   end
 
   create_table "spaces", force: :cascade do |t|
@@ -127,6 +128,7 @@ ActiveRecord::Schema.define(version: 2021_07_27_011158) do
     t.string "slug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["slug"], name: "index_spaces_on_slug", unique: true
   end
 
   create_table "users", force: :cascade do |t|

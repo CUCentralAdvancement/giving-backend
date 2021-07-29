@@ -90,11 +90,11 @@ div.sig-col {
       text-decoration: none;
       cursor: pointer;
     }
-    
+
     .slide-mob {
         display:none;
     }
-    
+
     div.sig-col {
         width: 50%;
         display:inline-block;
@@ -111,12 +111,12 @@ div.sig-col {
     p.give-anchor {
         display:block;
     }
-    
+
     p.give-noanchor {
         display:none;
     }
 }
-   
+
 @media only screen and (max-width: 700px) {
     .modal {
       display: none; /* Hidden by default */
@@ -169,13 +169,13 @@ div.sig-col {
     .slide-desk {
         display:none;
     }
-    
+
     div.sig-col {
         width: 100%;
         display:block;
         float:left;
     }
-    
+
 }
 Several current and past UCCS faculty have worked together to create this fund in support of UCCS students who work to help pay their way through school.
 Contribute today, and your gifts will be matched dollar-for-dollar through a pool of $100,000 matching dollars.
@@ -207,7 +207,7 @@ Click to learn more about each of our faculty participants.
 
 function showpics(){var a=$(""#box"").val();$.getJSON(""http://api.flickr.com/services/feeds/photos_public.gne?tags=""+a+""&tagmode=any&format=json&jsoncallback=?"",function(a){$(""#images"").hide().html(a).fadeIn(""fast""),$.each(a.items,function(a,e){$("""").attr(""src"",e.media.m).appendTo(""#images"")})})}
 
-            
+
 
 
 
@@ -221,7 +221,7 @@ var btn2 = document.getElementById(""myBtn2"");
 // Get the  element that closes the modal
 var span = document.getElementsByClassName(""close"")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn1.onclick = function() {
   modal.style.display = ""block"";
 }
@@ -254,7 +254,7 @@ window.onclick = function(event) {
 Your commitment to hard-working students will inspire possibilities now and leave a mark well into the future. Thanks to a generous alumni donor, each gift will be matched dollar for dollar!
  
 Gifts to this fund are made available for immediate use for Bridge Forward scholarship awards and are not invested as part of the endowment. Click here to make a gift to the endowment.
-","","0430106","","1","1","UCCS","","Scholarships & Student Success","/fund/bridge-forward-scholarship"
+","","0430106","26","1","1","UCCS","","Scholarships & Student Success","/fund/bridge-forward-scholarship"
 "University of Colorado Denver COSI Scholarship Fund","","To provide scholarship funding for students enrolled at the University of Colorado Denver.
 ","","","0321935","","1","0","CU Denver","Colorado Opportunity Scholarship Initiative","Scholarships & Student Success","/fund/university-colorado-denver-cosi-scholarship-fund"
 "University of Colorado Anschutz Shares Fund","","To provide emergency support for students at the University of Colorado Anschutz Medical Campus.

@@ -6,6 +6,7 @@ class Redirect < ApplicationRecord
   validates :source, uniqueness: true
 
   # Someone said you should use after_commit since it runs after persisted where after_save does not.
+  # https://flexport.engineering/how-to-safely-use-activerecords-after-save-efde2b52baa3
   # after_commit :save_redirect, if: :persisted?
   after_save :save_redirect
   after_destroy :destroy_redirect
