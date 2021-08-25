@@ -1,3 +1,5 @@
+**Archived in favor of https://github.com/CUCentralAdvancement/the-cms**
+
 # Project Title
 
 Intro sentence on the purpose of the project.
